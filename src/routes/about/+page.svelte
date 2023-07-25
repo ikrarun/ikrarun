@@ -14,9 +14,9 @@
 			<h1 class="font-bold text-white text-5xl">About</h1>
 			<h1 class="font-medium text-gray-200 text-base">
 				🚀 Welcome to Code Manch! Unraveling the mysteries of web development. HTML, CSS,
-				JavaScript, React, Node.js & more. Join our coding adventure! 💻🌐 <br /> 🤝 Let's connect,
+				JavaScript, React, Node.js & more. Join our coding adventure! 💻🌐 <br />  <br />🤝 Let's connect,
 				learn, and support each other in the vibrant coding community of Code Manch. Stay updated
-				with the latest web technologies, design principles, and user experience insights.<br />🌟
+				with the latest web technologies, design principles, and user experience insights.<br />  <br />🌟
 				Unlock the power of code and unleash your creativity in this dynamic digital landscape.
 				Click the follow button and let's embark on this coding journey together! 💻🚀
 			</h1>

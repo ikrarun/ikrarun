@@ -4,7 +4,7 @@
 </svelte:head>
 
 <main>
-	<div id="root" class="w-full static bg-center bg-cover screen">
+	<div id="root" class="w-full pointer-events-none static bg-center bg-cover screen">
 		<div class="flex h-full w-full bg-black/10">
 			<div
 				class="max-w-[900px] px-6 mx-auto flex-col text-white flex h-full w-full sm:items-center justify-center"

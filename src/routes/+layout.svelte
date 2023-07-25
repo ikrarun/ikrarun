@@ -5,7 +5,7 @@
 
 <div class="app">
 	<Header />
-	<main class="min-h-screen bg-black snap-start mx-auto w-full">
+	<main class="min-h-screen pointer-events-none bg-black snap-start mx-auto w-full">
 		<slot />
 	</main>
 </div>

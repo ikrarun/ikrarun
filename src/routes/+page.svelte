@@ -1,31 +1,26 @@
-<svelte:head>
-	<title>Home</title>
-	<meta name="description" content="Svelte demo app" />
-</svelte:head>
+<script>
+	import About from '$lib/UI/Root/about.svelte';
+	import Contact from '$lib/UI/Root/contact.svelte';
+	import Hero from '$lib/UI/Root/hero.svelte';
+	import Work from '$lib/UI/Root/work.svelte';
+	import Header from '$lib/import/Header.svelte';
+</script>
 
-<main>
-	<div id="root" class="w-full pointer-events-none static bg-center bg-cover screen">
-		<div class="flex h-full w-full bg-black/10">
-			<div
-				class="max-w-[900px] px-6 mx-auto flex-col text-white flex h-full w-full sm:items-center justify-center"
-			>
-				<h1 class="text-9xl font-black">Code Manch</h1>
-				<h1 class="font-medium text-xl pl-4">Learn to Code in Easy Manner</h1>
-				<div
-					class="mt-2 flex-wrap space-x-1 space-y-1 [&>*]:text-white items-center justify-start sm:justify-center w-full flex bg-transparent p-2 [&>*]:rounded-lg [&>*]:bg-black/40 [&>*]:px-2 [&>*]:py-1"
-				>
-					<h1>Web Developent</h1>
-					<h1>Android Studio</h1>
-					<h1>iOS Apps</h1>
-					<h1>Desktop</h1>
-				</div>
-			</div>
-		</div>
-	</div>
+<main class="flex flex-col w-full">
+	<Hero />
+	<Header />
+	<About />
+	<Work />
+	<Contact />
 </main>
 
+<svelte:head>
+	<title>Code Manch</title>
+	<meta name="description" content="Created with love by ikrarun" />
+</svelte:head>
+
 <style>
-	#root {
-		background-image: url($lib/images/back.svg);
+	main{
+		font-family: Raleway,serif;
 	}
 </style>

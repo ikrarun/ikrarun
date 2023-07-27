@@ -1,5 +1,42 @@
-<script>
+<script lang="ts">
 	import back from '$lib/images/back.webp';
+	import { onMount } from 'svelte';
+
+	const name = 'Kumar Arun';
+	const line1 = 'Self-taught Full Stack Developer,';
+	const line2 = 'School-taught Mathematician';
+	const tagline =
+		'I built Web and Android Apps with a focus on responsive design and accessibility.';
+
+	let disname = '';
+	let disline1 = '';
+	let disline2 = '';
+	let distagline = '';
+	let currentIndex = 0;
+
+	const animateText = () => {
+		if (currentIndex < name.length) {
+			disname = name.slice(0, currentIndex + 1);
+			currentIndex++;
+			setTimeout(animateText, 50); // Adjust the delay (in milliseconds) between each character here
+		} else if (currentIndex < name.length + line1.length) {
+			disline1 = line1.slice(0, currentIndex - name.length + 1);
+			currentIndex++;
+			setTimeout(animateText, 50);
+		} else if (currentIndex < name.length + line1.length + line2.length) {
+			disline2 = line2.slice(0, currentIndex - name.length - line1.length + 1);
+			currentIndex++;
+			setTimeout(animateText, 50);
+		} else if (currentIndex < name.length + line1.length + line2.length + tagline.length) {
+			distagline = tagline.slice(0, currentIndex - name.length - line1.length - line2.length + 1);
+			currentIndex++;
+			setTimeout(animateText, 50);
+		}
+	};
+
+	onMount(() => {
+		animateText();
+	});
 </script>
 
 <!-- Hero Section -->
@@ -9,18 +46,18 @@
 >
 	<div class="static">
 		<div class="z-20 flex flex-col items-center justify-center absolute h-full top-0 right-0">
-			<img class="z-0 h-3/4" src={back} alt="" />
+			<img class="z-0 h-1/4 sm:h-2/4 md:3/4" src={back} alt="" />
 		</div>
 
 		<div class="grid w-full absolute top-0 left-0 right-0 z-50 fscreen grid-rows-2">
 			<div class="bg-transparent px-10 py-3 flex flex-col items-start justify-end">
-				<h1 class="text-xl pl-1 font-semibold">Kumar Arun</h1>
-				<h1 class="text-6xl font-bold">Self-taught Full Stack Developer,</h1>
+				<h1 class="text-xl pl-1 font-semibold">{disname}</h1>
+				<h1 class="text-6xl font-bold">{disline1}</h1>
 			</div>
 			<div class="bg-transparent px-10 py-3 flex flex-col items-start justify-start space-y-1">
-				<h1 class="text-6xl font-bold">School-taught Mathematicians</h1>
+				<h1 class="text-6xl font-bold">{disline2}</h1>
 				<h1 class="text-lg pl-1 tracking-wide font-bold">
-					I built Web and Android Apps with a focus on responsive design and accessibility.
+					{distagline}
 				</h1>
 			</div>
 		</div>
@@ -30,4 +67,5 @@
 			<div class="bg-blue-600 px-10 py-3 flex flex-col items-start justify-start space-y-1" />
 		</div>
 	</div>
+	<h1 class="z-[100] rotate-90 absolute -right-5 bottom-12">Scroll Down -</h1>
 </section>

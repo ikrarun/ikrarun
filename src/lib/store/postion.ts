@@ -16,7 +16,6 @@ function setIndicator() {
 			entries.forEach((entry) => {
 				if (entry.isIntersecting) {
 					position.set(entry.target.id);
-					//console.log(entry.target.id);
 				}
 			});
 		}, options);

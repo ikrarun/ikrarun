@@ -1,13 +1,36 @@
-<script>
-	import { setSections } from '$lib/store/postion';
+<script lang="ts">
+	import position, { setSections } from '$lib/store/postion';
+	import { onMount } from 'svelte';
 	import Indicator from './indicator.svelte';
 	import Navbuttons from './navbuttons.svelte';
+	var visible: boolean = false;
 	var data = ['hero', 'about', 'work', 'contact'];
 	setSections(data);
+	const changevisibilty = () => {
+		if (window.scrollY > window.innerHeight * (1 / 2)) {
+			visible = true;
+		} else visible = false;
+	};
+
+	onMount(() => {
+		changevisibilty();
+
+		window.addEventListener('scroll', (e) => {
+			changevisibilty();
+		});
+
+		return () => {
+			window.removeEventListener;
+		};
+	});
 </script>
 
-<header class="sticky top-0 z-10">
-	<div class="flex-col bg-black/70 backdrop-blur-lg flex w-full items-center">
+<header
+	class={visible
+		? 'fixed w-full bg-black/70 transition-all duration-150 ease-in-out  top-0 -mt-[1px] z-[100]'
+		: 'fixed -top-96 bg-black/70 transition-all duration-150 ease-in-out w-full z-[100]'}
+>
+	<div class="flex-col flex w-full items-center">
 		<div
 			id="head"
 			class="w-full max-w-[900px] uppercase text-xl inline-flex

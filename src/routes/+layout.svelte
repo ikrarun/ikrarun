@@ -29,7 +29,7 @@
 	/>
 </svelte:head>
 
-<div class="app w-full flex flex-col screen bg-black text-white">
+<div class="app w-full flex flex-col screen text-white">
 	<main>
 		<slot />
 	</main>

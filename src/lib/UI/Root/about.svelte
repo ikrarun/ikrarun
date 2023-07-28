@@ -1,12 +1,11 @@
 <script>
 	//@ts-ignore
-	import arun from '$lib/images/arun.png?run';
-	import Img from '@zerodevx/svelte-img';
+	import arun from '$lib/images/arun.png';
 </script>
 
 <section
 	id="about"
-	class="fscreen relative items-stretch w-full flex space-y-14 flex-col justify-center"
+	class="fscreen relative bg-black -mt-[1px] text-white items-stretch w-full flex space-y-14 flex-col justify-center"
 >
 	<div class="grid grid-cols-1 sm:grid-cols-2 w-full h-full">
 		<div
@@ -40,15 +39,15 @@
 		</div>
 
 		<div id="img" class="h-full hidden sm:flex p-32">
-			<div class="rounded-full flex w-full object-center aspect-square overflow-clip">
-				<div class="h-fit w-fit object-center">
-					<Img class="h-fit w-fit" height={100}   src={arun} alt="Arun PIC" />
-				</div>
+			<div
+				class="relative overflow-clip w-auto mx-auto max-h-80 h-full mt-9 object-cover rounded-2xl"
+				id="nay"
+			>
+				<img alt="" class=" w-full h-full left-0 right-0 bottom-0" src={arun} />
 			</div>
 		</div>
 	</div>
 	<h1 class="z-[100] rotate-90 absolute -right-5 bottom-12">Scroll Down -</h1>
-
 </section>
 
 <style>

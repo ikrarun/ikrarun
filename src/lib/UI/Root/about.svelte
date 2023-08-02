@@ -5,7 +5,7 @@
 
 <section
 	id="about"
-	class="fscreen relative bg-black -mt-[1px] text-white items-stretch w-full flex space-y-14 flex-col justify-center"
+	class="fscreen relative bg-blue-600 -mt-[1px] text-white items-stretch w-full flex space-y-14 flex-col justify-center"
 >
 	<div class="grid grid-cols-1 sm:grid-cols-2 w-full h-full">
 		<div

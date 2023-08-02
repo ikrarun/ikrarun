@@ -21,7 +21,7 @@
 {:else}
 	<button
 		class={currpos === id
-			? 'bg-white/10 text-white p-1 px-3 rounded-l-full rounded-e-full space-x-1'
+			? 'bg-white/10  p-1 px-3 rounded-l-full rounded-e-full space-x-1'
 			: 'hover:bg-white/10 p-1 px-3 rounded-l-full rounded-e-full space-x-1'}
 		on:click={(e) => {
 			e.preventDefault();

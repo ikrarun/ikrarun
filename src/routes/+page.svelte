@@ -10,7 +10,7 @@
 	<Hero />
 	<Header />
 	<About />
-	<Work />
+	<!-- <Work /> -->
 	<Contact />
 </main>
 
@@ -20,7 +20,7 @@
 </svelte:head>
 
 <style>
-	main{
-		font-family: Raleway,serif;
+	main {
+		font-family: 'Roboto Slab', serif;
 	}
 </style>

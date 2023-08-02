@@ -1,7 +1,7 @@
 <script lang="ts">
 	import position from '$lib/store/postion';
-	let blank = 'rounded-full border bg-transparent h-2 w-2 border-white';
-	let fill = 'rounded-full border bg-white h-2 w-2 border-white';
+	let blank = 'rounded-full h-2 w-2 bg-black';
+	let fill = 'rounded-full h-2 w-2 bg-blue-700';
 	export let id: string;
 </script>
 

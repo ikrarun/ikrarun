@@ -35,6 +35,7 @@
 	},
 	"type": "module",
 	"dependencies": {
+		"aos": "^2.3.4",
 		"moment": "^2.29.4"
 	}
 }

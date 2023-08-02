@@ -5,7 +5,7 @@
 </script>
 
 <div
-	class="w-fit space-y-1 p-2 flex flex-col items-center justify-center h-full top-0 left-0 fixed"
+	class="w-fit hidden bg-black/10 py-3 h-fit border border-black/40 shadow-md shadow-black/10 space-y-2 p-2 flex flex-col items-center justify-center bottom-5 left-1 rounded-2xl fixed"
 >
 	{#each sectionsValue as data}
 		<Indicatorbuttons id={data} />

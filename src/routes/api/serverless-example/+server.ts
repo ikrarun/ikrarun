@@ -22,8 +22,8 @@ export async function POST() {
 		host: 'smtp-relay.brevo.com',
 		port: 587,
 		auth: {
-			user: 'karun1442@gmail.com',
-			pass: 'JvKjODkmsZbVhTy5'
+			user: process.env.USER_ID,
+			pass: process.env.USER_PASS
 		}
 	});
 

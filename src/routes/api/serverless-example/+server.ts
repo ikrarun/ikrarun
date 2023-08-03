@@ -1,7 +1,8 @@
-import { error } from '@sveltejs/kit';
+import { error, type RequestEvent } from '@sveltejs/kit';
 import nodemailer from 'nodemailer';
 
-export async function POST() {
+export async function POST(req:RequestEvent) {
+	console.log(req);
 	const xhtml = `<!DOCTYPE html>
 	<html>
 	<body>
@@ -12,11 +13,7 @@ export async function POST() {
 	</body>
 	</html>`;
 
-	var res = new Response(xhtml, {
-		headers: {
-			'Content-Type': 'application/text'
-		}
-	});
+	var res = new Response(JSON.stringify(xhtml));
 
 	const transporter = nodemailer.createTransport({
 		host: 'smtp-relay.brevo.com',
@@ -37,7 +34,7 @@ export async function POST() {
 		.then(() => {
 			return res;
 		})
-		.catch(() => {
-			throw error(400, 'Some Error Occured.');
+		.catch((e) => {
+			throw error(400, e);
 		});
 }

@@ -1,5 +1,5 @@
 <script lang="ts">
-	import back from '$lib/images/back.webp';
+	import hero from '$lib/images/hero.png';
 	import position from '$lib/store/postion';
 	import { onMount } from 'svelte';
 
@@ -55,26 +55,28 @@
 	class="fscreen relative w-full flex bg-center bg-cover bg-no-repeat flex-col items-center justify-center"
 >
 	<div class="static">
+		<!-- Hero Image -->
 		<div class="z-20 flex flex-col items-center justify-center absolute h-full top-0 right-0">
-			<img class="z-0 h-1/4 sm:h-2/4 md:3/4" src={back} alt="" />
+			<img class="z-0 h-1/5 sm:h-2/5 md:2/5" src={hero} alt="" />
 		</div>
 
+		<!-- Content -->
 		<div class="grid w-full absolute top-0 left-0 right-0 z-50 fscreen grid-rows-2">
 			<div class="bg-transparent px-10 py-3 flex flex-col items-start justify-end">
-				<h1 class="text-xl pl-1 mb-2 text-white font-semibold">{disname}</h1>
-				<h1 class="text-6xl text-white font-bold">{disline1}</h1>
+				<h1 class="text-xl pl-1 mb-2  font-semibold">{disname}</h1>
+				<h1 class="text-6xl  font-bold">{disline1}</h1>
 			</div>
 			<div class="bg-transparent px-10 py-3 flex flex-col items-start justify-start space-y-1">
-				<h1 class="text-6xl font-bold">{disline2}</h1>
-				<h1 class="text-lg pl-1 font-bold">
+				<h1 class="text-6xl text-white font-bold">{disline2}</h1>
+				<h1 class="text-lg text-white pl-1 font-bold">
 					{distagline}
 				</h1>
 			</div>
 		</div>
 
 		<div class="grid w-full absolute top-0 left-0 right-0 z-10 fscreen grid-rows-2">
-			<div class="bg-blue-700/95 px-10 py-3 flex flex-col items-start justify-end" />
-			<div class="bg-white px-10 py-3 flex flex-col items-start justify-start space-y-1" />
+			<div class=" bg-white px-10 py-3 flex flex-col items-start justify-end" />
+			<div class="bg-blue-700/95 px-10 py-3 flex flex-col items-start justify-start space-y-1" />
 		</div>
 	</div>
 </section>

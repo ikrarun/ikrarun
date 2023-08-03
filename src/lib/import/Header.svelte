@@ -32,10 +32,10 @@
 
 <header
 	class={visible
-		? 'fixed w-full bg-blue-700/95 text-white transition-all duration-150 ease-in-out  top-0 -mt-[1px] z-[100]'
-		: 'fixed -top-96 bg-blue-700/95 text-white transition-all duration-150 ease-in-out w-full z-[100]'}
+		? 'fixed w-full bg-white  text-white transition-all duration-150 ease-in-out  top-0 -mt-[1px] z-[100]'
+		: 'fixed -top-96 bg-white text-white transition-all duration-150 ease-in-out w-full z-[100]'}
 >
-	<div class="flex-col flex w-full items-center">
+	<div class="flex-col flex w-full bg-blue-700/95 items-center">
 		<div id="head" class="w-full max-w-[900px] p-3 uppercase text-sm inline-flex justify-between">
 			<div class="inline-flex items-center justify-between">
 				<Navbuttons id={'hero'} text="Code Manch" />

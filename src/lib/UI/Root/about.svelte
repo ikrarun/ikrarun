@@ -1,5 +1,5 @@
 <script>
-	import abimg from '$lib/images/abimg.svg';
+	import about from '$lib/images/about.png';
 </script>
 
 <section
@@ -10,7 +10,7 @@
 		<div
 			class="max-w-md h-fit text-sm text-black space-y-2 self-center transition-all duration-300 justify-self-center px-6 py-8 mt-9 rounded-lg"
 		>
-			<h1 class="text-2xl font-semibold ">Hello, I'm Kr. Arun</h1>
+			<h1 class="text-2xl font-semibold">Hello, I'm Kr. Arun</h1>
 			<p>I'm an enthusiastic Full Stack Developer from Sultanpur, Uttar Pradesh, India.</p>
 			<p>
 				With expertise in both front-end and back-end development, I craft dynamic web applications
@@ -41,7 +41,7 @@
 				class="relative overflow-clip w-auto mx-auto max-h-80 h-full mt-9 object-cover rounded-2xl"
 				id="nay"
 			>
-				<img alt="" class=" w-full h-full left-0 right-0 bottom-0" src={abimg} />
+				<img alt="" class=" w-full h-full left-0 right-0 bottom-0" src={about} />
 			</div>
 		</div>
 	</div>

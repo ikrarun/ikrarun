@@ -1,4 +1,5 @@
 <script lang="ts">
+	var state = 'idle';
 	let email = '';
 	function emailverficator(input: string) {
 		let pass = true;
@@ -8,15 +9,43 @@
 		if (!pass) {
 			error.classList.remove('opacity-0');
 			error.classList.add('opacity-100');
+			return pass;
 		} else {
 			error.classList.remove('opacity-100');
 			error.classList.add('opacity-0');
-			return;
+			return pass;
 		}
 	}
 
 	import contact from '$lib/images/contact.png';
 	import { onMount } from 'svelte';
+
+	async function sendEmail(mail: string) {
+		state = 'processing';
+
+		const ff = emailverficator(mail);
+		try {
+			if (!ff) {
+				state = 'done';
+
+				return;
+			}
+			await fetch('api/subscribe', {
+				method: 'POST',
+				headers: {
+					email: mail
+				}
+			});
+			state = 'done';
+			email = '';
+			setTimeout(function () {
+				state = 'idle';
+			}, 2000);
+		} catch (e) {
+			console.log(e);
+			state = 'idle';
+		}
+	}
 
 	onMount(() => {
 		const input = <HTMLInputElement>document.querySelector('#inputemail');
@@ -72,15 +101,34 @@
 					<label class="ml-1 text-gray-900 text-xs" for="email">Email</label>
 				</div>
 				<div class="flex flex-col">
-					<button
-						id="sub_btn"
-						on:click={(e) => {
-							e.preventDefault();
-							emailverficator(email);
-						}}
-						class="bg-blue-700 outline-none ring-0 border-none p-1 text-white rounded-b-sm"
-						>Subscribe to Newsletter</button
-					>
+					{#if (state === 'idle')}
+						<button
+							id="sub_btn"
+							on:click|preventDefault={() => {
+								sendEmail(email);
+							}}
+							class="bg-blue-700 outline-none ring-0 border-none p-1 text-white rounded-b-sm"
+							>Subscribe to Newsletter</button
+						>
+					{:else if (state === 'processing')}
+						<button
+							id="sub_btn"
+							on:click|preventDefault={() => {
+								return;
+							}}
+							class="bg-gray-700 animate-pulse duration-200 outline-none ring-0 border-none p-1 text-white rounded-b-sm"
+							>Wait....</button
+						>
+					{:else if (state === 'done')}
+						<button
+							id="sub_btn"
+							on:click|preventDefault={() => {
+								return;
+							}}
+							class="bg-green-700 outline-none ring-0 border-none p-1 text-white rounded-b-sm"
+							>Thanks for Subscribing</button
+						>
+					{/if}
 				</div>
 				<h1
 					class="self-start absolute text-xs text-red-600 -bottom-7 transition-all duration-200 opacity-0 mt-2"

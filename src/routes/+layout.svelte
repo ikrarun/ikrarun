@@ -1,22 +1,22 @@
 <script>
 	import '$lib/import/styles.css';
-	import { onMount } from 'svelte';
+	// import { onMount } from 'svelte';
 
-	// Function to check if the user agent indicates a mobile device
-	function isMobileDevice() {
-		return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
-			navigator.userAgent
-		);
-	}
+	// // Function to check if the user agent indicates a mobile device
+	// function isMobileDevice() {
+	// 	return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
+	// 		navigator.userAgent
+	// 	);
+	// }
 
-	onMount(() => {
-		// Check if the user is on a mobile device
-		if (isMobileDevice()) {
-			// Redirect to the mobile version of the site or a specific URL
-			window.location.href = 'https://codemanch.vercel.app';
-			// Replace 'https://example.com/mobile' with the URL you want to redirect to.
-		}
-	});
+	// onMount(() => {
+	// 	// Check if the user is on a mobile device
+	// 	if (isMobileDevice()) {
+	// 		// Redirect to the mobile version of the site or a specific URL
+	// 		window.location.href = 'https://codemanch.vercel.app';
+	// 		// Replace 'https://example.com/mobile' with the URL you want to redirect to.
+	// 	}
+	// });
 </script>
 
 <svelte:head>

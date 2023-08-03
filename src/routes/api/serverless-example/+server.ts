@@ -14,7 +14,7 @@ export async function POST() {
 
 	var res = new Response(xhtml, {
 		headers: {
-			'Content-Type': 'text'
+			'Content-Type': 'application/text'
 		}
 	});
 

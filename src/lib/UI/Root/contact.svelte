@@ -72,7 +72,6 @@
 
 		<div class="flex max-w-md sm:pr-28 flex-col-reverse sm:flex-col w-full justify-center mx-auto">
 			<div class="sm:mt-0 flex flex-col items-center sm:items-start justify-center sm:justify-start mt-6 pb-4">
-				<h1 class="text-sm text-gray-600">Contact Me</h1>
 				<h1 class="sm:text-2xl text-base text-black">Got A Problem to Solve?</h1>
 				<h1 class="sm:text-sm text-xs text-center sm:text-left text-gray-700">
 					Get your space suit ready and tell me your ideas to develop your dream website.

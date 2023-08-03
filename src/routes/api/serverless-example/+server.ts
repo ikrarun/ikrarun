@@ -19,8 +19,8 @@ export async function POST(req:RequestEvent) {
 		host: 'smtp-relay.brevo.com',
 		port: 587,
 		auth: {
-			user: process.env.USER_ID,
-			pass: process.env.USER_PASS
+			user: import.meta.env.VITE_USER_ID,
+			pass: import.meta.env.VITE_USER_PASS
 		}
 	});
 

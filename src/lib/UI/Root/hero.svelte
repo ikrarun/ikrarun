@@ -63,12 +63,12 @@
 		<!-- Content -->
 		<div class="grid w-full absolute top-0 left-0 right-0 z-50 fscreen grid-rows-2">
 			<div class="bg-transparent px-10 py-3 flex flex-col items-start justify-end">
-				<h1 class="text-xl pl-1 mb-2  font-semibold">{disname}</h1>
-				<h1 class="text-6xl  font-bold">{disline1}</h1>
+				<h1 class="text-sm sm:text-xl pl-1 mb-2 font-semibold">{disname}</h1>
+				<h1 class=" text-xl sm:text-6xl font-bold">{disline1}</h1>
 			</div>
 			<div class="bg-transparent px-10 py-3 flex flex-col items-start justify-start space-y-1">
-				<h1 class="text-6xl text-white font-bold">{disline2}</h1>
-				<h1 class="text-lg text-white pl-1 font-bold">
+				<h1 class="text-xl sm:text-6xl text-white font-bold">{disline2}</h1>
+				<h1 class="text-xs sm:text-lg text-white pl-1 font-bold">
 					{distagline}
 				</h1>
 			</div>

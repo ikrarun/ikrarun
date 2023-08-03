@@ -40,7 +40,7 @@
 			<div class="inline-flex items-center justify-between">
 				<Navbuttons id={'hero'} text="Code Manch" />
 			</div>
-			<nav class="inline-flex topline space-x-2">
+			<nav class=" hidden sm:inline-flex topline space-x-2">
 				<Navbuttons id={'about'} text="About" />
 				<Navbuttons id={'contact'} text="Contact" />
 			</nav>

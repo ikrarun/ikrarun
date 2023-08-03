@@ -8,7 +8,7 @@
 >
 	<div class="grid grid-cols-1 sm:grid-cols-2 w-full h-full">
 		<div
-			class="max-w-md h-fit text-sm text-black space-y-2 self-center transition-all duration-300 justify-self-center px-6 py-8 mt-9 rounded-lg"
+			class="max-w-md h-fit text-sm text-black space-y-2 self-center justify-self-center px-6 py-8 mt-9 rounded-lg"
 		>
 			<h1 class="text-2xl font-semibold">Hello, I'm Kr. Arun</h1>
 			<p>I'm an enthusiastic Full Stack Developer from Sultanpur, Uttar Pradesh, India.</p>

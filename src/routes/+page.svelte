@@ -1,16 +1,20 @@
-<script>
+<script lang="ts">
 	import About from '$lib/UI/Root/about.svelte';
 	import Contact from '$lib/UI/Root/contact.svelte';
 	import Hero from '$lib/UI/Root/hero.svelte';
-	import Work from '$lib/UI/Root/work.svelte';
 	import Header from '$lib/import/Header.svelte';
+	import { onMount } from 'svelte';
+	onMount(()=>{
+		document.addEventListener("contextmenu",()=>{
+			return;
+		})
+	})
 </script>
 
-<main class="flex flex-col w-full">
+<main class="flex flex-col w-full relative">
 	<Hero />
 	<Header />
 	<About />
-	<!-- <Work /> -->
 	<Contact />
 </main>
 
@@ -20,5 +24,4 @@
 </svelte:head>
 
 <style>
-	
 </style>

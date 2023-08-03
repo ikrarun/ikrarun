@@ -19,16 +19,16 @@
 <!-- Work Section -->
 <section
 	id="contact"
-	class="fscreen relative flex space-y-14 flex-col w-full bg-white items-center justify-center"
+	class="relative h-fit flex space-y-14 flex-col w-full items-center justify-center"
 >
-	<div class="grid grid-cols-2 max-w-[900px] w-full fscreen">
-		<div class="flex flex-col w-full space-y-2 fscreen justify-center items-start">
-			<h1 class="text-xl text-blue-900">Contact Me</h1>
-			<h1 class="text-4xl text-black">Got A Problem to Solve?</h1>
-			<h1 class="text-xl text-gray-700">
+	<div class="grid grid-cols-2 max-w-[900px] h-fit py-28 w-full">
+		<div class="flex flex-col w-full space-y-2 justify-center items-start">
+			<h1 class="text-sm text-blue-900">Contact Me</h1>
+			<h1 class="text-2xl text-black">Got A Problem to Solve?</h1>
+			<h1 class="text-sm text-gray-700">
 				Get your space suit ready and tell me your ideas to develop your dream website.
 			</h1>
-			<div class="text-base inline-flex items-center">
+			<div class="text-sm inline-flex items-center">
 				<a
 					href="mailto:wowdeveloper@protonmail.com"
 					class="underline underline-offset-4 text-blue-700"
@@ -37,7 +37,7 @@
 			</div>
 		</div>
 
-		<div class="flex flex-col items-center justify-center fscreen pl-4 sm:pl-16 w-full">
+		<div class="flex flex-col items-center justify-center pl-4 sm:pl-16 w-full">
 			<form autocomplete="off" class="rounded-md relative w-full border text-base border-blue-700">
 				<div class="flex flex-col-reverse p-2">
 					<input
@@ -59,12 +59,12 @@
 							e.preventDefault();
 							emailverficator(email);
 						}}
-						class="bg-blue-700 outline-none ring-0 border-none p-1 text-white rounded-b-sm font-semibold"
+						class="bg-blue-700 outline-none ring-0 border-none p-1 text-white rounded-b-sm"
 						>Subscribe to Newsletter</button
 					>
 				</div>
 				<h1
-					class="self-start absolute text-sm text-red-600 -bottom-7 transition-all duration-200 opacity-0 mt-2"
+					class="self-start absolute text-xs text-red-600 -bottom-7 transition-all duration-200 opacity-0 mt-2"
 					id="errortext"
 				>
 					Invalid Email Address.
@@ -72,13 +72,10 @@
 			</form>
 		</div>
 	</div>
-	<h1 id="scdown" class="z-[100] rotate-90 absolute right-0 bottom-6">- End -</h1>
 </section>
 
-
 <style>
-	
-	#scdown{
-		font-family: 'Inter', sans-serif;
+	section {
+		font-family: 'Poppins', sans-serif;
 	}
 </style>

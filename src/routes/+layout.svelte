@@ -36,5 +36,5 @@
 </div>
 
 <style>
-	@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz@9..40&family=Inter&family=Josefin+Sans&family=Quicksand&family=Roboto+Slab&family=Rokkitt&family=Sacramento&display=swap');
-  </style>
+	@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+</style>

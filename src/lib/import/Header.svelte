@@ -51,6 +51,6 @@
 
 <style>
 	header {
-		font-family: 'Inter', sans-serif;
+		font-family: 'Josefin Sans', sans-serif;
 	}
 </style>

@@ -20,7 +20,5 @@
 </svelte:head>
 
 <style>
-	main {
-		font-family: 'Roboto Slab', serif;
-	}
+	
 </style>

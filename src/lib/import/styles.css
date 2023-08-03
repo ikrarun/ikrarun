@@ -3,18 +3,31 @@
 @tailwind utilities;
 
 :root {
+	overflow: overlay;
 	user-select: none;
 	scroll-behavior: smooth;
-	scroll-snap-type: y mandatory;
 }
 
-:root {
-	-ms-overflow-style: none; /* Internet Explorer 10+ */
-	scrollbar-width: none; /* Firefox */
-	overflow: -moz-scrollbars-none;}
-	
+:root::-ms-scrollbar {
+	background: white;
+	width: 0.4em;
+}
+:root::scrollbar {
+	background: white;
+	width: 0.4em;
+}
 :root::-webkit-scrollbar {
-	display: none; /* Safari and Chrome */
+	background: white;
+	width: 0.4em;
+}
+:root::-webkit-scrollbar-thumb {
+	background: rgb(29 78 216);
+}
+:root::-ms-scrollbar-thumb {
+	background: rgb(29 78 216);
+}
+:root::scrollbar-thumb {
+	background: rgb(29 78 216);
 }
 
 .screen {
@@ -36,7 +49,7 @@
 }
 
 section {
-	scroll-snap-align:center;
+	scroll-snap-align: center;
 	scroll-snap-type: y mandatory;
 }
 #exw:hover::after {
@@ -68,27 +81,32 @@ section {
 	text-transform: capitalize;
 }
 
-
-
 .typeeffect h1 {
 	overflow: hidden; /* Ensures the content is not revealed until the animation */
-	border-right: .15em solid white; /* The typwriter cursor */
+	border-right: 0.15em solid white; /* The typwriter cursor */
 	white-space: nowrap; /* Keeps the content on a single line */
 	margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-	letter-spacing: .15em; /* Adjust as needed */
-	animation: 
-	  typing 3.5s steps(40, end),
-	  blink-caret .75s step-end infinite;
-  }
-  
-  /* The typing effect */
-  @keyframes typing {
-	from { width: 0 }
-	to { width: 100% }
-  }
-  
-  /* The typewriter cursor effect */
-  @keyframes blink-caret {
-	from, to { border-color: transparent }
-	50% { border-color: orange; }
-  }
+	letter-spacing: 0.15em; /* Adjust as needed */
+	animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+	from {
+		width: 0;
+	}
+	to {
+		width: 100%;
+	}
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+	from,
+	to {
+		border-color: transparent;
+	}
+	50% {
+		border-color: orange;
+	}
+}

@@ -61,12 +61,12 @@
 
 		<div class="grid w-full absolute top-0 left-0 right-0 z-50 fscreen grid-rows-2">
 			<div class="bg-transparent px-10 py-3 flex flex-col items-start justify-end">
-				<h1 class="text-xl pl-1 text-white font-semibold">{disname}</h1>
+				<h1 class="text-xl pl-1 mb-2 text-white font-semibold">{disname}</h1>
 				<h1 class="text-6xl text-white font-bold">{disline1}</h1>
 			</div>
 			<div class="bg-transparent px-10 py-3 flex flex-col items-start justify-start space-y-1">
 				<h1 class="text-6xl font-bold">{disline2}</h1>
-				<h1 class="text-lg pl-1 tracking-wide font-bold">
+				<h1 class="text-lg pl-1 font-bold">
 					{distagline}
 				</h1>
 			</div>
@@ -77,14 +77,10 @@
 			<div class="bg-white px-10 py-3 flex flex-col items-start justify-start space-y-1" />
 		</div>
 	</div>
-	<h1 id="scdown" class="z-[100] rotate-90 absolute -right-5 bottom-12">Scroll Down -</h1>
 </section>
 
 <style>
 	section {
-		font-family: 'Josefin Sans', sans-serif;
-	}
-	#scdown{
-		font-family: 'Inter', sans-serif;
+		font-family: 'Poppins', sans-serif;
 	}
 </style>

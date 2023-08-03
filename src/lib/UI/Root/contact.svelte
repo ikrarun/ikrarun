@@ -14,16 +14,35 @@
 			return;
 		}
 	}
+
+	import contact from '$lib/images/contact.png';
+	import { onMount } from 'svelte';
+
+	onMount(() => {
+		const input = <HTMLInputElement>document.querySelector('#inputemail');
+		input.addEventListener('input', (e) => {
+			if (email.length > 0) {
+				return;
+			} else {
+				emailverficator('k@g.com');
+			}
+		});
+	});
 </script>
 
 <!-- Work Section -->
-<section
-	id="contact"
-	class="relative h-fit flex space-y-14 flex-col w-full items-center justify-center"
->
+<section id="contact" class="relative h-fit flex flex-col w-full items-center justify-center">
 	<div class="grid grid-cols-2 max-w-[900px] h-fit py-28 w-full">
-		<div class="flex flex-col w-full space-y-2 justify-center items-start">
-			<h1 class="text-sm text-blue-900">Contact Me</h1>
+		<div class="max-h-min hidden sm:flex">
+			<div
+				class="relative object-fill p-10 overflow-clip w-auto mx-auto max-h-80 h-full rounded-2xl"
+			>
+				<img alt="" class=" w-full h-full left-0 right-0 bottom-0" src={contact} />
+			</div>
+		</div>
+
+		<div class="flex flex-col w-full justify-center items-start">
+			<h1 class="text-sm text-gray-600">Contact Me</h1>
 			<h1 class="text-2xl text-black">Got A Problem to Solve?</h1>
 			<h1 class="text-sm text-gray-700">
 				Get your space suit ready and tell me your ideas to develop your dream website.
@@ -35,10 +54,10 @@
 					><i class="fa fa-envelope mr-2" aria-hidden="true" />wowdeveloper@protonmail.com</a
 				>
 			</div>
-		</div>
-
-		<div class="flex flex-col items-center justify-center pl-4 sm:pl-16 w-full">
-			<form autocomplete="off" class="rounded-md relative w-full border text-base border-blue-700">
+			<form
+				autocomplete="off"
+				class="rounded-md mt-12 relative w-full border text-base border-blue-700"
+			>
 				<div class="flex flex-col-reverse p-2">
 					<input
 						type="email"

@@ -6,17 +6,7 @@ Welcome to my stellar developer portfolio website! 🌟 This is where I showcase
 
 ## 🌟 About Me
 
-Ahoy, fellow explorers of the digital cosmos! 🚀 My name is [Your Name], a code conjurer and tech enthusiast. With a wizard's hat and a keyboard as my wand, I weave spells of logic and creativity to craft marvelous web applications that leave a lasting impression on both users and the code itself. 🎩✨
-
-## ✨ Projects
-
-Venture into the realms of my creations, where each project is a unique tale of innovation and inspiration:
-
-### 🎉 Project 1: Awesome App
-
-🔮 **Description:** Embark on a journey through this mesmerizing app that [briefly describe the project's purpose and features]. Unveil the secrets of [specific functionality or highlight].
-
-📚 **Tech Stack:** JavaScript, React, Node.js, MongoDB
+Ahoy, fellow explorers of the digital cosmos! 🚀 My name is Kr.Arun, a code conjurer and tech enthusiast. With a wizard's hat and a keyboard as my wand, I weave spells of logic and creativity to craft marvelous web applications that leave a lasting impression on both users and the code itself. 🎩✨
 
 
 As a seasoned traveler in the realm of code, I've honed my skills in various areas:

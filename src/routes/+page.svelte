@@ -3,20 +3,16 @@
 	import Contact from '$lib/UI/Root/contact.svelte';
 	import Hero from '$lib/UI/Root/hero.svelte';
 	import Header from '$lib/import/Header.svelte';
-	import { onMount } from 'svelte';
-	onMount(()=>{
-		document.addEventListener("contextmenu",()=>{
-			return;
-		})
-	})
+	
 </script>
 
-<main class="flex flex-col w-full relative">
+<div id="root" class="flex flex-col w-full relative">
+	
 	<Hero />
 	<Header />
 	<About />
 	<Contact />
-</main>
+</div>
 
 <svelte:head>
 	<title>Code Manch</title>
@@ -24,4 +20,5 @@
 </svelte:head>
 
 <style>
+	
 </style>

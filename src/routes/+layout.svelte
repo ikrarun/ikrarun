@@ -1,5 +1,34 @@
 <script lang="ts">
 	import '$lib/import/styles.css';
+	import { onMount } from 'svelte';
+	onMount(() => {
+		const contextMenu = <HTMLDivElement>document.getElementById('context-menu');
+		const page = <HTMLDivElement>document.getElementById('root');
+		page.addEventListener('contextmenu', (e) => {
+			e.preventDefault();
+			var posX = e.clientX + window.scrollX;
+			var posY = e.clientY + window.scrollY;
+			if (posY + contextMenu.clientHeight > page.clientHeight) {
+				posY = page.clientHeight - (contextMenu.clientHeight + 10);
+			}
+			contextMenu.style.left = `${posX}px`;
+			contextMenu.style.top = `${posY}px`;
+			contextMenu.style.display = 'flex';
+		});
+
+		window.addEventListener('scroll', () => {
+			contextMenu.style.display = 'none';
+		});
+	});
+
+	function clickcontext(context: string) {
+		const contextMenu = <HTMLDivElement>document.getElementById('context-menu');
+		contextMenu.style.display = 'none';
+
+		if (context === 'youtube') {
+			window.open('https://www.youtube.com/@codemanch', '_blank');
+		}
+	}
 </script>
 
 <svelte:head>
@@ -12,7 +41,25 @@
 	/>
 </svelte:head>
 
-<div class="app w-full flex flex-col screen text-blue-700">
+<div class="app w-full overflow-clip flex flex-col screen text-blue-700">
+	<div
+		class="custom-menu flex flex-col justify-start items-start
+	 absolute bg-blue-700/95 text-sm z-[6000] p-1 rounded-lg text-white [&>*]:text-start"
+		id="context-menu"
+	>
+		<button
+			class="hover:bg-black/20 p-2 rounded-md"
+			on:click|preventDefault={() => clickcontext('youtube')}
+			><i class="fa sm:text-sm text-xs fa-video-camera mr-2" aria-hidden="true" />Watch Tutorials</button
+		>
+		<button
+			class="hover:bg-black/20 p-2 rounded-md w-full"
+			on:click|preventDefault={() => clickcontext('report')}
+			><i
+				class="fa sm:text-sm text-xs fa-exclamation-triangle mr-2"
+				aria-hidden="true"
+			/>Report</button>
+	</div>
 	<main>
 		<slot />
 	</main>

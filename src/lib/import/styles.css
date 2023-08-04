@@ -8,6 +8,16 @@
 	scroll-behavior: smooth;
 }
 
+.blue {
+	background-color: #1876b4;
+}
+.text-blue {
+	color: #1876b4;
+}
+.text-blue-hero {
+	color: #1876b4;
+}
+
 :root::-ms-scrollbar {
 	background: white;
 	width: 0.4em;
@@ -21,13 +31,13 @@
 	width: 0.4em;
 }
 :root::-webkit-scrollbar-thumb {
-	background: rgb(29 78 216);
+	background: #1876b4;
 }
 :root::-ms-scrollbar-thumb {
-	background: rgb(29 78 216);
+	background: #1876b4;
 }
 :root::scrollbar-thumb {
-	background: rgb(29 78 216);
+	background: #1876b4;
 }
 
 .screen {
@@ -43,10 +53,6 @@
 	margin-right: auto;
 }
 
-.blue {
-	--tw-bg-opacity: 1;
-	background-color: rgb(29 78 216 / var(--tw-bg-opacity));
-}
 
 section {
 	scroll-snap-align: center;

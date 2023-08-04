@@ -1,13 +1,13 @@
 <script>
-	import about from '$lib/images/about.png';
+	import about from '$lib/images/about.gif';
 </script>
 
 <section
 	id="about"
 	class="relative -mt-[1px] items-stretch w-full flex space-y-14 flex-col justify-center"
 >
-	<div class="grid grid-cols-1 sm:grid-cols-2 w-full h-full">
-		<div
+<div class="sm:grid flex flex-col-reverse items-center justify-center grid-cols-1 sm:grid-cols-2 w-full h-full">
+	<div
 			class="max-w-md h-fit text-sm text-black space-y-2 self-center justify-self-center px-6 py-8 mt-9 rounded-lg"
 		>
 			<h1 class="text-2xl font-semibold">Hello, I'm Kr. Arun</h1>
@@ -29,19 +29,18 @@
 
 			<a
 				href="mailto:wowdeveloper@protonmail.com"
-				class="text-blue-700 underline underline-offset-2"
+				class="text-blue underline underline-offset-2"
 			>
 				@ wowdeveloper@protonmail.com</a
 			>
 			<p>Let's embark on an incredible journey of innovation and craftsmanship together! 😊</p>
 		</div>
 
-		<div id="img" class="h-full hidden sm:flex p-32">
+		<div id="img" class="h-fit flex sm:p-32">
 			<div
-				class="relative overflow-clip w-auto mx-auto max-h-80 h-full mt-9 object-cover rounded-2xl"
-				id="nay"
+				class="relative  flex items-center justify-center overflow-clip w-auto mx-auto h-fit mt-9 object-cover rounded-2xl"
 			>
-				<img alt="" class=" w-full h-full left-0 right-0 bottom-0" src={about} />
+				<img alt="" class=" w-2/3 sm:w-full h-auto left-0 right-0 bottom-0" src={about} />
 			</div>
 		</div>
 	</div>

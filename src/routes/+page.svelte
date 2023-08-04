@@ -3,13 +3,11 @@
 	import Contact from '$lib/UI/Root/contact.svelte';
 	import Hero from '$lib/UI/Root/hero.svelte';
 	import Header from '$lib/import/Header.svelte';
-	
 </script>
 
 <div id="root" class="flex flex-col w-full relative">
-	
 	<Hero />
-	<Header />
+	<Header fix={false}/>
 	<About />
 	<Contact />
 </div>
@@ -20,5 +18,4 @@
 </svelte:head>
 
 <style>
-	
 </style>

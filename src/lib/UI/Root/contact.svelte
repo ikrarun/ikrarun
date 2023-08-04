@@ -17,7 +17,8 @@
 		}
 	}
 
-	import contact from '$lib/images/contact.png';
+	import contact from '$lib/images/contact.gif';
+	import Navbuttons from '$lib/import/navbuttons.svelte';
 	import { onMount } from 'svelte';
 
 	async function sendEmail(mail: string) {
@@ -71,7 +72,9 @@
 		</div>
 
 		<div class="flex max-w-md sm:pr-28 flex-col-reverse sm:flex-col w-full justify-center mx-auto">
-			<div class="sm:mt-0 flex flex-col items-center sm:items-start justify-center sm:justify-start mt-6 pb-4">
+			<div
+				class="sm:mt-0 flex flex-col items-center sm:items-start justify-center sm:justify-start mt-6 pb-4"
+			>
 				<h1 class="sm:text-2xl text-base text-black">Got A Problem to Solve?</h1>
 				<h1 class="sm:text-sm text-xs text-center sm:text-left text-gray-700">
 					Get your space suit ready and tell me your ideas to develop your dream website.
@@ -79,7 +82,7 @@
 				<div class="sm:text-sm text-xs inline-flex items-center">
 					<a
 						href="mailto:wowdeveloper@protonmail.com"
-						class="underline sm:text-sm text-xs underline-offset-4 text-blue-700"
+						class="underline sm:text-sm text-xs underline-offset-4 text-blue"
 						><i
 							class="fa sm:text-sm text-xs fa-envelope mr-2"
 							aria-hidden="true"
@@ -89,7 +92,7 @@
 			</div>
 			<form
 				autocomplete="off"
-				class="rounded-md relative w-full border text-sm sm:text-base border-blue-700"
+				class="rounded-md relative w-full border text-sm sm:text-base border-[#1876b4]"
 			>
 				<div class="flex flex-col-reverse p-2">
 					<input
@@ -111,7 +114,7 @@
 							on:click|preventDefault={() => {
 								sendEmail(email);
 							}}
-							class="bg-blue-700 outline-none ring-0 border-none p-1 text-white rounded-b-sm"
+							class="blue outline-none ring-0 border-none p-1 text-white rounded-b-sm"
 							>Subscribe to Newsletter</button
 						>
 					{:else if state === 'processing'}
@@ -141,6 +144,11 @@
 					Invalid Email Address.
 				</h1>
 			</form>
+		</div>
+	</div>
+	<div class="w-full bg-sky-500/10 mt-20 text-black text-xs">
+		<div class="max-w-[900px] p-1 pl-10 flex w-full mx-auto items-start justify-start">
+			<a href="https://forms.office.com/r/aGBT5ie8Lg" target="_blank" ><i class="fa fa-exclamation-triangle mr-1" aria-hidden="true"/>Report</a>
 		</div>
 	</div>
 </section>

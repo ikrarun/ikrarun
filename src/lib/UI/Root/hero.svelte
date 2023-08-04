@@ -1,5 +1,6 @@
 <script lang="ts">
-	import hero from '$lib/images/hero.png';
+	import '$lib/import/styles.css';
+	import hero from '$lib/images/hero.gif';
 	import position from '$lib/store/postion';
 	import { onMount } from 'svelte';
 
@@ -36,47 +37,27 @@
 	};
 
 	onMount(() => {
-		position.subscribe((data) => {
-			if (data === undefined || data === 'hero' || data === null || data === '') {
-				disname = '';
-				disline1 = '';
-				disline2 = '';
-				distagline = '';
-				currentIndex = 0;
-				animateText();
-			}
-		});
+		animateText();
 	});
 </script>
 
-<!-- Hero Section -->
-<section
-	id="hero"
-	class="fscreen relative w-full flex bg-center bg-cover bg-no-repeat flex-col items-center justify-center"
->
-	<div class="static">
-		<!-- Hero Image -->
-		<div class="z-20 flex flex-col items-center justify-center absolute h-full top-0 right-0">
-			<img class="z-0 h-1/5 sm:h-2/5 md:2/5" src={hero} alt="" />
-		</div>
+<section id="hero" class=" w-full">
+	<!-- image -->
+	<div class="z-20 w-full sm:w-3/4 md:w-fit absolute right-0 flex h-screen">
+		<img src={hero} class="sm:my-auto w-2/3 sm:w-auto mx-auto h-fit" alt="hero" />
+	</div>
 
-		<!-- Content -->
-		<div class="grid w-full absolute top-0 left-0 right-0 z-50 fscreen grid-rows-2">
-			<div class="bg-transparent px-10 py-3 flex flex-col items-start justify-end">
-				<h1 class="text-sm sm:text-xl pl-1 mb-2 font-semibold">{disname}</h1>
-				<h1 class=" text-xl sm:text-6xl font-bold">{disline1}</h1>
-			</div>
-			<div class="bg-transparent px-10 py-3 flex flex-col items-start justify-start space-y-1">
-				<h1 class="text-xl sm:text-6xl text-white font-bold">{disline2}</h1>
-				<h1 class="text-xs sm:text-lg text-white pl-1 font-bold">
-					{distagline}
-				</h1>
-			</div>
+	<!-- Content -->
+	<div class="grid w-full fscreen grid-rows-2">
+		<div class="text-blue-hero bg-white px-10 py-3 flex flex-col items-start justify-end">
+			<h1 class="text-sm z-30 sm:text-xl pl-1 mb-2 font-semibold">{disname}</h1>
+			<h1 class=" text-xl z-30 sm:text-6xl font-bold">{disline1}</h1>
 		</div>
-
-		<div class="grid w-full absolute top-0 left-0 right-0 z-10 fscreen grid-rows-2">
-			<div class=" bg-white px-10 py-3 flex flex-col items-start justify-end" />
-			<div class="bg-blue-700/95 px-10 py-3 flex flex-col items-start justify-start space-y-1" />
+		<div class="blue px-10 py-3 flex flex-col items-start justify-start space-y-1">
+			<h1 class="text-xl sm:text-6xl z-30 text-white font-bold">{disline2}</h1>
+			<h1 class="text-xs sm:text-lg z-30 text-white pl-1 font-bold">
+				{distagline}
+			</h1>
 		</div>
 	</div>
 </section>

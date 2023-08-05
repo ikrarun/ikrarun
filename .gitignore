@@ -17,3 +17,4 @@ vite.config.ts.timestamp-*
 *.lock
 /yarn-error.log
 /.vscode
+.prettierrc

@@ -51,7 +51,7 @@
 							}}
 							class=" border-black/20 dark:border-white/40 hover:bg-black/5 dark:hover:bg-white/10 cursor-pointer select-text break-inside-avoid-column w-full h-fit border flex flex-col items-start justify-start rounded-md p-1"
 						>
-							<img class="rounded-md mb-1" src={item.image} alt="" />
+							<img class="rounded-md mb-1" height="100%" width="100%" src={item.image} alt="" />
 							<h1 class="text-xl px-1 text-blue dark:text-gray-200 font-semibold">{item.title}</h1>
 							<h1 class="text-xs text-gray-700/80 dark:text-gray-200/80 px-1 font-extralight">
 								{item.description}

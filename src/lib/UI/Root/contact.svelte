@@ -113,6 +113,7 @@
 				<div class="flex flex-col">
 					{#if state === 'idle'}
 						<button
+							aria-label="button to subscribe newsletter"
 							id="sub_btn"
 							on:click|preventDefault={() => {
 								sendEmail(email);

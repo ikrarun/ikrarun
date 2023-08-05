@@ -41,22 +41,24 @@
 	<!-- Content -->
 	<div class="grid w-full fscreen grid-rows-2">
 		<div
-			class="text-blue-hero dark:text-black text-white bg-white dark:bg-[#1876b4] px-10 py-3 flex flex-col items-start justify-end"
+			class="bg-white dark:bg-black text-[#1876b4] px-10 py-3 flex flex-col items-start justify-start space-y-1"
 		>
-			<h1 class="text-sm z-30 sm:text-xl pl-1 mb-2 font-semibold">{disname}</h1>
-			<h1 class=" text-xl z-30 sm:text-6xl font-bold">{disline1}</h1>
+			<div class="w-full px-10 py-3 h-full flex flex-col justify-end">
+				<h1 class="text-sm z-30 sm:text-xl pl-1 mb-2 font-semibold">{disname}</h1>
+				<h1 class=" text-xl z-30 sm:text-6xl font-bold">{disline1}</h1>
+			</div>
 		</div>
 		<div
-			class="blue dark:bg-black text-white dark:text-[#1876b4] px-10 py-3 flex flex-col items-start justify-start space-y-1"
+			class="bg-cover px-10 py-3 text-white bg-white mybglight dark:mybgdark flex flex-col items-start justify-start"
 		>
-			<h1 class="text-xl sm:text-6xl z-30 font-bold">{disline2}</h1>
-			<h1 class="text-xs sm:text-lg z-30 pl-1 font-bold">
-				{distagline}
-			</h1>
+			<div class="w-full px-10 py-3 h-full flex flex-col justify-start">
+				<h1 class="text-xl sm:text-6xl z-30 font-bold">{disline2}</h1>
+				<h1 class="text-xs sm:text-lg z-30 pl-1 font-bold">
+					{distagline}
+				</h1>
+			</div>
+			<div class="absolute -right-6 bottom-16 rotate-90 text-white">Scroll Down</div>
 		</div>
-	</div>
-	<div class="absolute -right-6 bottom-16 rotate-90 text-white">
-		Scroll Down <i class="fa text-xs fa-angle-right" aria-hidden="true" />
 	</div>
 </section>
 

@@ -1,9 +1,9 @@
 /** @type {import('tailwindcss').Config} */
 export default {
-	  darkMode: 'class',
+	darkMode: 'class',
 	content: ['./src/**/*.{html,js,svelte,ts}'],
 	theme: {
 		extend: {}
 	},
-  plugins: [require("tailwindcss-debug-screens")],
+	plugins: []
 };

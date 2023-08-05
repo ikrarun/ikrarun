@@ -46,9 +46,7 @@
 		crossorigin="anonymous"
 		referrerpolicy="no-referrer"
 	/>
-	<meta property="og:image" content={shot}/>
-	<meta property="og:title" content="Code Manch">
-	<meta property="og:url" content="https://codemanch.vercel.app/">
+	
 </svelte:head>
 
 <div class="app w-full overflow-clip flex flex-col screen">

@@ -1,5 +1,4 @@
 <script lang="ts">
-	import hero from '$lib/images/hero.webp';
 	import { onMount } from 'svelte';
 	const name = 'Kumar Arun';
 	const line1 = 'Self-taught Full Stack Developer,';
@@ -39,11 +38,6 @@
 </script>
 
 <section id="hero" class="relative w-full">
-	<!-- image -->
-	<div class="z-20 w-full top-1/4 sm:top-0 sm:w-3/4 md:w-fit absolute right-0 flex h-screen">
-		<img src={hero} class="sm:my-auto w-auto mx-auto h-fit" alt="hero" />
-	</div>
-
 	<!-- Content -->
 	<div class="grid w-full fscreen grid-rows-2">
 		<div

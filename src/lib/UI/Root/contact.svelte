@@ -148,7 +148,7 @@
 	</div>
 	<div class="w-full bg-sky-500/10 mt-20 text-black text-xs">
 		<div class="max-w-[900px] p-1 pl-10 flex w-full mx-auto items-start justify-start">
-			<a href="https://forms.office.com/r/aGBT5ie8Lg" target="_blank" ><i class="fa fa-exclamation-triangle mr-1" aria-hidden="true"/>Report</a>
+			<a href="https://forms.gle/5dijSo4zbkeh2DDt6" target="_blank" ><i class="fa fa-exclamation-triangle mr-1" aria-hidden="true"/>Report</a>
 		</div>
 	</div>
 </section>

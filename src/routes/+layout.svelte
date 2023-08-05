@@ -1,6 +1,7 @@
 <script lang="ts">
 	import './styles.css';
 	import { onMount } from 'svelte';
+	import shot from '$lib/images/shot.jpeg'
 	onMount(() => {
 		const contextMenu = <HTMLDivElement>document.getElementById('context-menu');
 		const page = <HTMLDivElement>document.getElementById('root');
@@ -45,6 +46,9 @@
 		crossorigin="anonymous"
 		referrerpolicy="no-referrer"
 	/>
+	<meta property="og:image" content={shot}/>
+	<meta property="og:title" content="Code Manch">
+	<meta property="og:url" content="https://codemanch.vercel.app/">
 </svelte:head>
 
 <div class="app w-full overflow-clip flex flex-col screen">

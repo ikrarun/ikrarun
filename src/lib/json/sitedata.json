@@ -1,9 +1,9 @@
 [
-    {
-        "id":1,
-      "title": "Code Manch",
-      "description": "A testament to my web development journey, featuring projects, skills, and the artistry of code.",
-      "image": "https://raw.githubusercontent.com/codemanch/codemanch/main/src/lib/images/shot.jpeg",
-      "link": "https://codemanch.vercel.app"
-    }
-  ]
+	{
+		"id": 1,
+		"title": "Code Manch",
+		"description": "A testament to my web development journey, featuring projects, skills, and the artistry of code.",
+		"image": "https://raw.githubusercontent.com/codemanch/codemanch/main/src/lib/images/shot.webp",
+		"link": "https://codemanch.vercel.app"
+	}
+]

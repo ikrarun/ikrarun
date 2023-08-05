@@ -2,8 +2,10 @@
 	import { setSections } from '$lib/store/postion';
 	import { onMount } from 'svelte';
 	var togglenav: boolean = false;
+	import navicon from 'svelte-awesome/icons/navicon';
 
 	import Navbuttons from './navbuttons.svelte';
+	import { Icon } from 'svelte-awesome';
 	export let fix: boolean;
 	var visible: boolean = false;
 	let style: string;
@@ -57,18 +59,17 @@
 					<Navbuttons link="" id={'contact'} text="Contact" />
 					<Navbuttons link="/work" id={'work'} text="Work" />
 				</nav>
-				<div class="flex sm:hidden">
-					<i
-						class="fa fa-bars z-50 flex sm:hidden topline px-2 py-1 rounded-sm hover:dark:bg-white/40 hover:bg-black/20 self-center"
-						aria-hidden="true"
-						on:click|preventDefault={() => {
-							togglenav = !togglenav;
-						}}
-					/>
-				</div>
+				<button
+					on:click|preventDefault={() => {
+						togglenav = !togglenav;
+					}}
+					class="flex sm:hidden z-50 topline px-2 py-1 rounded-sm hover:dark:bg-white/40 hover:bg-black/20 self-center"
+				>
+					<Icon data={navicon} />
+				</button>
 				<div
 					class={togglenav
-						? 'fixed items-center justify-center flex flex-col space-y-4 sm:hidden top-0 right-0 left-0 h-full w-full dark:bg-black bg-white z-40'
+						? 'fixed items-center justify-center flex flex-col space-y-4 sm:hidden top-0 right-0 left-0 h-full w-full dark:bg-black text-black bg-gray-200 dark:text-white z-40'
 						: 'hidden'}
 				>
 					<Navbuttons link="" id={'about'} text="About" />

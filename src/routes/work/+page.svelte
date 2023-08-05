@@ -40,13 +40,11 @@
 			<!-- Projects -->
 			<div class="container max-w-[900px] w-full mx-auto p-4">
 				<div
-					role="row"
 					class="sm:columns-2 md:columns-3 2xl:columns-4 columns-1 w-4/5 space-y-4 gap-4 sm:w-full max-h-full mx-auto overflow-visible"
 				>
 					{#each pdata as item (item.id)}
+						<!-- svelte-ignore a11y-no-static-element-interactions -->
 						<div
-							role="gridcell"
-							tabindex="0"
 							on:keydown={() => {}}
 							on:click|preventDefault={() => {
 								window.open(item.link, '_self');

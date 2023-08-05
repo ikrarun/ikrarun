@@ -49,7 +49,8 @@
 			</div>
 		</div>
 		<div
-			class="bg-cover px-10 py-3 text-white bg-white mybglight dark:mybgdark flex flex-col items-start justify-start"
+			style="background-image: url('https://raw.githubusercontent.com/codemanch/codemanch/main/src/lib/images/bg.svg');"
+			class="bg-cover px-10 py-3 text-white bg-white flex flex-col items-start justify-start"
 		>
 			<div class="w-full px-10 py-3 h-full flex flex-col justify-start">
 				<h1 class="text-xl sm:text-6xl z-30 font-bold">{disline2}</h1>

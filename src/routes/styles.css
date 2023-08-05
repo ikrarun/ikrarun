@@ -129,13 +129,3 @@ section {
 		border-color: orange;
 	}
 }
-
-@layer utilities {
-	.mybgdark {
-		background-image: url('data:image/svg+xml,<svg id="visual" viewBox="0 0 960 540" width="960" height="540" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"><defs><filter id="blur1" x="-10%" y="-10%" width="120%" height="120%"><feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood><feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"></feBlend><feGaussianBlur stdDeviation="163" result="effect1_foregroundBlur"></feGaussianBlur></filter></defs><rect width="960" height="540" fill="%23082030"></rect><g filter="url(%23blur1)"><circle cx="808" cy="519" fill="%231876b4" r="363"></circle><circle cx="755" cy="26" fill="%23082030" r="363"></circle><circle cx="951" cy="383" fill="%231876b4" r="363"></circle><circle cx="221" cy="40" fill="%231876b4" r="363"></circle><circle cx="309" cy="493" fill="%23082030" r="363"></circle><circle cx="351" cy="285" fill="%231876b4" r="363"></circle></g></svg>');
-	}
-
-	.mybglight {
-		background-image: url('data:image/svg+xml,<svg id="visual" viewBox="0 0 960 540" width="960" height="540" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"><defs><filter id="blur1" x="-10%" y="-10%" width="120%" height="120%"><feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood><feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"></feBlend><feGaussianBlur stdDeviation="163" result="effect1_foregroundBlur"></feGaussianBlur></filter></defs><rect width="960" height="540" fill="%237cbde8"></rect><g filter="url(%23blur1)"><circle cx="659" cy="177" fill="%231876b4" r="363"></circle><circle cx="301" cy="230" fill="%237cbde8" r="363"></circle><circle cx="543" cy="35" fill="%231876b4" r="363"></circle><circle cx="874" cy="263" fill="%231876b4" r="363"></circle><circle cx="719" cy="465" fill="%237cbde8" r="363"></circle><circle cx="531" cy="391" fill="%231876b4" r="363"></circle></g></svg>');
-	}
-}

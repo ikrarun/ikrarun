@@ -40,25 +40,31 @@
 
 <section id="hero" class="relative w-full">
 	<!-- image -->
-	<div class="z-20 w-full  sm:w-3/4 md:w-fit absolute right-0 flex h-screen">
-		<img src={hero} class="sm:my-auto mix-blend-multiply w-2/3 sm:w-auto mx-auto h-fit" alt="hero" />
+	<div class="z-20 w-full sm:w-3/4 md:w-fit absolute right-0 flex h-screen">
+		<!-- svelte-ignore a11y-media-has-caption -->
+		<video src={hero} class="sm:my-auto mix-blend-multiply w-2/3 sm:w-auto mx-auto h-fit" />
 	</div>
 
 	<!-- Content -->
 	<div class="grid w-full fscreen grid-rows-2">
-		<div class="text-blue-hero dark:text-black text-white bg-white dark:bg-[#1876b4] px-10 py-3 flex flex-col items-start justify-end">
+		<div
+			class="text-blue-hero dark:text-black text-white bg-white dark:bg-[#1876b4] px-10 py-3 flex flex-col items-start justify-end"
+		>
 			<h1 class="text-sm z-30 sm:text-xl pl-1 mb-2 font-semibold">{disname}</h1>
 			<h1 class=" text-xl z-30 sm:text-6xl font-bold">{disline1}</h1>
 		</div>
-		<div class="blue dark:bg-black text-white dark:text-[#1876b4] px-10 py-3 flex flex-col items-start justify-start space-y-1">
-			<h1 class="text-xl sm:text-6xl z-30  font-bold">{disline2}</h1>
-			<h1 class="text-xs sm:text-lg z-30  pl-1 font-bold">
+		<div
+			class="blue dark:bg-black text-white dark:text-[#1876b4] px-10 py-3 flex flex-col items-start justify-start space-y-1"
+		>
+			<h1 class="text-xl sm:text-6xl z-30 font-bold">{disline2}</h1>
+			<h1 class="text-xs sm:text-lg z-30 pl-1 font-bold">
 				{distagline}
 			</h1>
 		</div>
 	</div>
-	<div class="absolute -right-6 bottom-16 rotate-90 text-white">Scroll Down <i class="fa text-xs fa-angle-right" aria-hidden="true"/>
-</div>
+	<div class="absolute -right-6 bottom-16 rotate-90 text-white">
+		Scroll Down <i class="fa text-xs fa-angle-right" aria-hidden="true" />
+	</div>
 </section>
 
 <style>

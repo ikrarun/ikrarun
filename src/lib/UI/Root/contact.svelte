@@ -62,13 +62,17 @@
 </script>
 
 <!-- Work Section -->
-<section id="contact" class="relative bg-white dark:bg-black h-fit flex flex-col w-full items-center justify-center">
+<section
+	id="contact"
+	class="relative bg-white dark:bg-black h-fit flex flex-col w-full items-center justify-center"
+>
 	<div class="grid grid-cols-1 sm:grid-cols-2 w-full px-6 sm:p-0 h-full">
 		<div class="max-h-min flex">
 			<div
 				class="relative object-fill p-10 overflow-clip sm:w-auto max-h-44 mx-auto sm:max-h-80 h-full rounded-2xl"
 			>
-				<img alt="" class=" w-full h-full left-0 right-0 bottom-0" src={contact} />
+				<!-- svelte-ignore a11y-media-has-caption -->
+				<video class=" w-full h-full left-0 right-0 bottom-0" src={contact} />
 			</div>
 		</div>
 
@@ -147,7 +151,7 @@
 			</form>
 		</div>
 	</div>
-	<Bottomnav/>
+	<Bottomnav />
 </section>
 
 <style>

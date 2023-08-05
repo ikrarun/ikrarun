@@ -1,5 +1,5 @@
 <script lang="ts">
-	import hero from '$lib/images/hero.png';
+	import hero from '$lib/images/hero.webp';
 	import { onMount } from 'svelte';
 	const name = 'Kumar Arun';
 	const line1 = 'Self-taught Full Stack Developer,';

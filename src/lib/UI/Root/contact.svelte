@@ -17,7 +17,7 @@
 		}
 	}
 
-	import contact from '$lib/images/contact.png';
+	import contact from '$lib/images/contact.webp';
 	import { onMount } from 'svelte';
 	import Bottomnav from '../nav/bottomnav.svelte';
 

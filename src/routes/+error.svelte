@@ -1,5 +1,5 @@
 <script>
-	import error from '$lib/images/404.png';
+	import error from '$lib/images/404.webp';
 	import Header from '$lib/UI/nav/Header.svelte';
 	import Bottomnav from '$lib/UI/nav/bottomnav.svelte';
 </script>

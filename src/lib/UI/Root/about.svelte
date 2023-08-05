@@ -1,5 +1,5 @@
 <script>
-	import about from '$lib/images/about.svg';
+	import about from '$lib/images/about.webp';
 </script>
 
 <section

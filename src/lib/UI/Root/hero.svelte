@@ -1,6 +1,6 @@
 <script lang="ts">
 	import { onMount } from 'svelte';
-	import bg from '$lib/images/bg.svg';
+	import bg from '$lib/images/bg.webp';
 	const name = 'Kumar Arun';
 	const line1 = 'Self-taught Full Stack Developer,';
 	const line2 = 'School-taught Mathematician';

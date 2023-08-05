@@ -39,6 +39,11 @@
 	<Bottomnav />
 </div>
 
+<svelte:head>
+	<title>Error Occured</title>
+	<meta name="description" content="Created with love by ikrarun" />
+</svelte:head>
+
 <style>
 	#img {
 		object-fit: fill;

@@ -13,7 +13,10 @@
 	let pdata:Post[] = data;
 </script>
 
-
+<svelte:head>
+	<title>Work:Code Manch</title>
+	<meta name="description" content="Created with love by ikrarun" />
+</svelte:head>
 <!-- Work Section -->
 <div id="root" class="min-h-screen flex flex-col justify-between relative">
 	<main id="work" class=" relative w-screen text-black dark:text-white dark:bg-black bg-white items-center justify-center">

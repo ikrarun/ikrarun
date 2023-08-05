@@ -64,6 +64,7 @@
 						togglenav = !togglenav;
 					}}
 					class="flex sm:hidden z-50 topline px-2 py-1 rounded-sm hover:dark:bg-white/40 hover:bg-black/20 self-center"
+					aria-label="Nav"
 				>
 					<Icon data={navicon} />
 				</button>

@@ -45,6 +45,7 @@
 			Report</a
 		>
 		<button
+			aria-label="toggle dark mode"
 			on:click|preventDefault={() => {
 				darkmodeswitch();
 			}}

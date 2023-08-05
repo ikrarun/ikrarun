@@ -60,7 +60,7 @@
 	
 </svelte:head>
 
-<div class="app debug-screens w-full overflow-clip bg-white dark:bg-black flex flex-col screen">
+<div class="app w-full overflow-clip bg-white dark:bg-black flex flex-col screen">
 
 	<div
 		class="custom-menu hidden flex-col justify-start items-start

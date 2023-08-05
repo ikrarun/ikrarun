@@ -17,8 +17,7 @@
 		}
 	}
 
-	import contact from '$lib/images/contact.gif';
-	import Navbuttons from '$lib/UI/nav/navbuttons.svelte';
+	import contact from '$lib/images/contact.png';
 	import { onMount } from 'svelte';
 	import Bottomnav from '../nav/bottomnav.svelte';
 
@@ -71,8 +70,7 @@
 			<div
 				class="relative object-fill p-10 overflow-clip sm:w-auto max-h-44 mx-auto sm:max-h-80 h-full rounded-2xl"
 			>
-				<!-- svelte-ignore a11y-media-has-caption -->
-				<video class=" w-full h-full left-0 right-0 bottom-0" src={contact} />
+				<img alt="" class=" w-full h-full left-0 right-0 bottom-0" src={contact} />
 			</div>
 		</div>
 

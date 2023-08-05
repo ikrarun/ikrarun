@@ -38,6 +38,7 @@
 	},
 	"type": "module",
 	"dependencies": {
+		"@dotlottie/player-component": "^2.2.0",
 		"@lottiefiles/jlottie": "^1.2.1",
 		"@lottiefiles/lottie-player": "^2.0.2",
 		"moment": "^2.29.4",

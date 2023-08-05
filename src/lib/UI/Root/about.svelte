@@ -1,5 +1,5 @@
 <script>
-	import about from '$lib/images/about.gif';
+	import about from '$lib/images/about.png';
 </script>
 
 <section
@@ -39,8 +39,7 @@
 			<div
 				class="relative flex items-center justify-center overflow-clip w-auto mx-auto h-fit mt-9 object-cover rounded-2xl"
 			>
-				<!-- svelte-ignore a11y-media-has-caption -->
-				<video class=" w-2/3 sm:w-full h-auto left-0 right-0 bottom-0" src={about} />
+				<img alt="" class=" w-2/3 sm:w-full h-auto left-0 right-0 bottom-0" src={about} />
 			</div>
 		</div>
 	</div>

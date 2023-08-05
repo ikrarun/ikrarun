@@ -1,7 +1,7 @@
 <script lang="ts">
 	import './styles.css';
 	import { onMount } from 'svelte';
-		onMount(() => {
+	onMount(() => {
 		const contextMenu = <HTMLDivElement>document.getElementById('context-menu');
 		const page = <HTMLDivElement>document.getElementById('root');
 		page.addEventListener('contextmenu', (e) => {
@@ -45,23 +45,24 @@
 		crossorigin="anonymous"
 		referrerpolicy="no-referrer"
 	/>
-	<meta property="og:image"
-		content='https://raw.githubusercontent.com/codemanch/codemanch/main/src/lib/images/shot.jpeg' />
+	<meta
+		property="og:image"
+		content="https://raw.githubusercontent.com/codemanch/codemanch/main/src/lib/images/shot.jpeg"
+	/>
 	<meta property="og:title" content="Code Manch" />
-	<meta property="og:url" content="https://codemanch.vercel.app/">
-	<meta property="twitter:image"
-		content='https://raw.githubusercontent.com/codemanch/codemanch/main/src/lib/images/shot.jpeg' />
-		<meta property="twitter:card" content="summary_large_image">
-		<meta property="twitter:title" content="Code Manch" />
-		<meta property="twitter:description" content="Created with Love by Kr Arun">
-		<meta property="og:description" content="Created with Love by Kr Arun">
-	<meta property="og:url" content="https://codemanch.vercel.app/">
-	
-	
+	<meta property="og:url" content="https://codemanch.vercel.app/" />
+	<meta
+		property="twitter:image"
+		content="https://raw.githubusercontent.com/codemanch/codemanch/main/src/lib/images/shot.jpeg"
+	/>
+	<meta property="twitter:card" content="summary_large_image" />
+	<meta property="twitter:title" content="Code Manch" />
+	<meta property="twitter:description" content="Created with Love by Kr Arun" />
+	<meta property="og:description" content="Created with Love by Kr Arun" />
+	<meta property="og:url" content="https://codemanch.vercel.app/" />
 </svelte:head>
 
 <div class="app w-full overflow-clip bg-white dark:bg-black flex flex-col screen">
-
 	<div
 		class="custom-menu hidden flex-col justify-start items-start
 	 absolute blue text-sm z-[6000] p-1 rounded-lg text-white [&>*]:text-start"
@@ -78,7 +79,8 @@
 			><i
 				class="fa sm:text-sm text-xs fa-exclamation-triangle mr-2"
 				aria-hidden="true"
-			/>Report</button>
+			/>Report</button
+		>
 	</div>
 	<main>
 		<slot />
@@ -86,9 +88,5 @@
 </div>
 
 <style>
-@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Raleway&family=Yatra+One&display=swap');
-	@font-face {
-	font-family: 'Skyscapers';
-	src: url('//2ttf.com/webfont/6IF8GLA3aiM/webfont.ttf') format('truetype');
-}
+	@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Raleway&family=Yatra+One&display=swap');
 </style>

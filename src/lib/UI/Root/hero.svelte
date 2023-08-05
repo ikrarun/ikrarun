@@ -1,5 +1,5 @@
 <script lang="ts">
-	import hero from '$lib/images/hero.gif';
+	import hero from '$lib/images/hero.png';
 	import { onMount } from 'svelte';
 	const name = 'Kumar Arun';
 	const line1 = 'Self-taught Full Stack Developer,';
@@ -40,9 +40,8 @@
 
 <section id="hero" class="relative w-full">
 	<!-- image -->
-	<div class="z-20 w-full sm:w-3/4 md:w-fit absolute right-0 flex h-screen">
-		<!-- svelte-ignore a11y-media-has-caption -->
-		<video src={hero} class="sm:my-auto mix-blend-multiply w-2/3 sm:w-auto mx-auto h-fit" />
+	<div class="z-20 w-full top-1/4 sm:top-0 sm:w-3/4 md:w-fit absolute right-0 flex h-screen">
+		<img src={hero} class="sm:my-auto w-auto mx-auto h-fit" alt="hero" />
 	</div>
 
 	<!-- Content -->

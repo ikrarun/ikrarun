@@ -1,6 +1,6 @@
 <script>
 	import error from '$lib/images/404.gif';
-	import Header from '$lib/import/Header.svelte';
+	import Header from '$lib/UI/nav/Header.svelte';
 </script>
 
 <div

@@ -12,7 +12,7 @@
 		thumbnail: string;
 		images: string[];
 	}
-	import Header from '$lib/import/Header.svelte';
+	import Header from '$lib/UI/nav/Header.svelte';
 	export let data: Post;
 </script>
 

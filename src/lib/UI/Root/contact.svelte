@@ -18,7 +18,7 @@
 	}
 
 	import contact from '$lib/images/contact.gif';
-	import Navbuttons from '$lib/import/navbuttons.svelte';
+	import Navbuttons from '$lib/UI/nav/navbuttons.svelte';
 	import { onMount } from 'svelte';
 
 	async function sendEmail(mail: string) {

@@ -1,5 +1,5 @@
 <script lang="ts">
-	import '$lib/import/styles.css';
+	import './styles.css';
 	import { onMount } from 'svelte';
 	onMount(() => {
 		const contextMenu = <HTMLDivElement>document.getElementById('context-menu');

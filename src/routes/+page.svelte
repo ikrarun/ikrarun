@@ -2,7 +2,7 @@
 	import About from '$lib/UI/Root/about.svelte';
 	import Contact from '$lib/UI/Root/contact.svelte';
 	import Hero from '$lib/UI/Root/hero.svelte';
-	import Header from '$lib/import/Header.svelte';
+	import Header from '$lib/UI/nav/Header.svelte';
 </script>
 
 <div id="root" class="flex flex-col w-full relative">

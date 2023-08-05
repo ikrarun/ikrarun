@@ -1,9 +1,6 @@
 <script lang="ts">
-	import '$lib/import/styles.css';
 	import hero from '$lib/images/hero.gif';
-	import position from '$lib/store/postion';
 	import { onMount } from 'svelte';
-
 	const name = 'Kumar Arun';
 	const line1 = 'Self-taught Full Stack Developer,';
 	const line2 = 'School-taught Mathematician';

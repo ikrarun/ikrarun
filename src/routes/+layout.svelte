@@ -45,7 +45,6 @@
 		crossorigin="anonymous"
 		referrerpolicy="no-referrer"
 	/>
-
 	<meta property="og:image"
 		content='https://raw.githubusercontent.com/codemanch/codemanch/main/src/lib/images/shot.jpeg' />
 	<meta property="og:title" content="Code Manch" />
@@ -61,7 +60,8 @@
 	
 </svelte:head>
 
-<div class="app w-full overflow-clip flex flex-col screen">
+<div class="app debug-screens w-full overflow-clip bg-white dark:bg-black flex flex-col screen">
+
 	<div
 		class="custom-menu hidden flex-col justify-start items-start
 	 absolute blue text-sm z-[6000] p-1 rounded-lg text-white [&>*]:text-start"
@@ -86,5 +86,9 @@
 </div>
 
 <style>
-	@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Raleway&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Raleway&family=Yatra+One&display=swap');
+	@font-face {
+	font-family: 'Skyscapers';
+	src: url('//2ttf.com/webfont/6IF8GLA3aiM/webfont.ttf') format('truetype');
+}
 </style>

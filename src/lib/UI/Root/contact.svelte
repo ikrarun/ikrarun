@@ -20,6 +20,7 @@
 	import contact from '$lib/images/contact.gif';
 	import Navbuttons from '$lib/UI/nav/navbuttons.svelte';
 	import { onMount } from 'svelte';
+	import Bottomnav from '../nav/bottomnav.svelte';
 
 	async function sendEmail(mail: string) {
 		state = 'processing';
@@ -61,7 +62,7 @@
 </script>
 
 <!-- Work Section -->
-<section id="contact" class="relative h-fit flex flex-col w-full items-center justify-center">
+<section id="contact" class="relative bg-white dark:bg-black h-fit flex flex-col w-full items-center justify-center">
 	<div class="grid grid-cols-1 sm:grid-cols-2 w-full px-6 sm:p-0 h-full">
 		<div class="max-h-min flex">
 			<div
@@ -75,8 +76,8 @@
 			<div
 				class="sm:mt-0 flex flex-col items-center sm:items-start justify-center sm:justify-start mt-6 pb-4"
 			>
-				<h1 class="sm:text-2xl text-base text-black">Got A Problem to Solve?</h1>
-				<h1 class="sm:text-sm text-xs text-center sm:text-left text-gray-700">
+				<h1 class="sm:text-2xl text-base text-black dark:text-white">Got A Problem to Solve?</h1>
+				<h1 class="sm:text-sm text-xs text-center sm:text-left text-gray-700 dark:text-gray-400">
 					Get your space suit ready and tell me your ideas to develop your dream website.
 				</h1>
 				<div class="sm:text-sm text-xs inline-flex items-center">
@@ -105,7 +106,7 @@
 						name="email"
 						bind:value={email}
 					/>
-					<label class="ml-1 text-gray-900 text-xs" for="email">Email</label>
+					<label class="ml-1 text-gray-900 dark:text-gray-500 text-xs" for="email">Email</label>
 				</div>
 				<div class="flex flex-col">
 					{#if state === 'idle'}
@@ -146,11 +147,7 @@
 			</form>
 		</div>
 	</div>
-	<div class="w-full bg-sky-500/10 mt-20 text-black text-xs">
-		<div class="max-w-[900px] p-1 pl-10 flex w-full mx-auto items-start justify-start">
-			<a href="https://forms.gle/5dijSo4zbkeh2DDt6" target="_blank" ><i class="fa fa-exclamation-triangle mr-1" aria-hidden="true"/>Report</a>
-		</div>
-	</div>
+	<Bottomnav/>
 </section>
 
 <style>

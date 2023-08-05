@@ -1,8 +1,7 @@
 <script lang="ts">
 	import './styles.css';
 	import { onMount } from 'svelte';
-	import shot from '$lib/images/shot.jpeg'
-	onMount(() => {
+		onMount(() => {
 		const contextMenu = <HTMLDivElement>document.getElementById('context-menu');
 		const page = <HTMLDivElement>document.getElementById('root');
 		page.addEventListener('contextmenu', (e) => {
@@ -48,11 +47,11 @@
 	/>
 
 	<meta property="og:image"
-		content='https://raw.githubusercontent.com/codemanch/codemanch/626463994d1b96e7f48acb9b9c0c73d66d286c1c/src/lib/images/shot.jpeg' />
+		content='https://raw.githubusercontent.com/codemanch/codemanch/main/src/lib/images/shot.jpeg' />
 	<meta property="og:title" content="Code Manch" />
 	<meta property="og:url" content="https://codemanch.vercel.app/">
 	<meta property="twitter:image"
-		content='https://raw.githubusercontent.com/codemanch/codemanch/626463994d1b96e7f48acb9b9c0c73d66d286c1c/src/lib/images/shot.jpeg' />
+		content='https://raw.githubusercontent.com/codemanch/codemanch/main/src/lib/images/shot.jpeg' />
 		<meta property="twitter:card" content="summary_large_image">
 		<meta property="twitter:title" content="Code Manch" />
 		<meta property="twitter:description" content="Created with Love by Kr Arun">

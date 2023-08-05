@@ -32,19 +32,19 @@
 	width: 0;
 }
 
-@media(prefers-color-scheme:dark){
+@media (prefers-color-scheme: dark) {
 	:root::-ms-scrollbar {
-	background: black;
-	width: 0;
-}
-:root::scrollbar {
-	background: black;
-	width: 0;
-}
-:root::-webkit-scrollbar {
-	background: black;
-	width: 0;
-}
+		background: black;
+		width: 0;
+	}
+	:root::scrollbar {
+		background: black;
+		width: 0;
+	}
+	:root::-webkit-scrollbar {
+		background: black;
+		width: 0;
+	}
 }
 :root::-webkit-scrollbar-thumb {
 	background: #1876b4;
@@ -57,17 +57,15 @@
 }
 
 .xscreen {
+	height: 100dvh;
 	height: 100vh;
 }
 .fscreen {
-	min-height: 100svh;
-	min-height: 100vh;
-	max-height: 100svh;
-	max-height: 100vh;
+	height: 100dvh;
+	height: 100vh;
 	margin-left: auto;
 	margin-right: auto;
 }
-
 
 section {
 	scroll-snap-align: center;
@@ -108,7 +106,9 @@ section {
 	white-space: nowrap; /* Keeps the content on a single line */
 	margin: 0 auto; /* Gives that scrolling effect as the typing happens */
 	letter-spacing: 0.15em; /* Adjust as needed */
-	animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite;
+	animation:
+		typing 3.5s steps(40, end),
+		blink-caret 0.75s step-end infinite;
 }
 
 /* The typing effect */

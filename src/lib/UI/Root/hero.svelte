@@ -1,5 +1,6 @@
 <script lang="ts">
 	import { onMount } from 'svelte';
+	import bg from '$lib/images/bg.svg';
 	const name = 'Kumar Arun';
 	const line1 = 'Self-taught Full Stack Developer,';
 	const line2 = 'School-taught Mathematician';
@@ -33,6 +34,8 @@
 	};
 
 	onMount(() => {
+		const el = <HTMLDivElement>document.getElementById('bgshow');
+		el.style.backgroundImage = `url('${bg}')`;
 		animateText();
 	});
 </script>
@@ -49,7 +52,7 @@
 			</div>
 		</div>
 		<div
-			style="background-image: url('https://raw.githubusercontent.com/codemanch/codemanch/main/src/lib/images/bg.svg');"
+			id="bgshow"
 			class="bg-cover px-10 py-3 text-white bg-white flex flex-col items-start justify-start"
 		>
 			<div class="w-full px-10 py-3 h-full flex flex-col justify-start">

@@ -1,4 +1,4 @@
-# 🚀 My Portfolio is CodeManch
+# 🚀 My Portfolio is Kumar Arun
 
 Welcome to my stellar developer portfolio website! 🌟 This is where I showcase my projects, skills, and journeys through the enchanting realm of software development.
 

@@ -40,7 +40,7 @@
 			<!-- Projects -->
 			<div class="container max-w-[900px] w-full mx-auto p-4">
 				<div
-					class="sm:columns-2 md:columns-3 2xl:columns-4 columns-1 w-4/5 space-y-4 gap-4 sm:w-full max-h-full mx-auto overflow-visible"
+					class="grid sm:grid-cols-2 md:grid-cols-3 2xl:grid-cols-4 grid-cols-1 w-4/5  gap-4 sm:w-full max-h-full mx-auto overflow-visible"
 				>
 					{#each pdata as item (item.id)}
 						<!-- svelte-ignore a11y-no-static-element-interactions -->
@@ -49,7 +49,7 @@
 							on:click|preventDefault={() => {
 								window.open(item.link, '_self');
 							}}
-							class=" border-black/20 dark:border-white/40 hover:bg-black/5 dark:hover:bg-white/10 cursor-pointer select-text break-inside-avoid-column w-full h-fit border flex flex-col items-start justify-start rounded-md p-1"
+							class=" border-black/20 grow dark:border-white/40 hover:bg-black/5 dark:hover:bg-white/10 cursor-pointer select-text break-inside-avoid-column w-full  border flex flex-col items-start justify-start rounded-md p-1"
 						>
 							<img class="rounded-md mb-1" height="100%" width="100%" src={item.image} alt="" />
 							<h1 class="text-xl px-1 text-blue dark:text-gray-200 font-semibold">{item.title}</h1>

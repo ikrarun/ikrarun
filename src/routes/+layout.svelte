@@ -32,7 +32,7 @@
 			window.open('https://www.youtube.com/@codemanch', '_blank');
 		}
 		if (context === 'report') {
-			window.open('https://github.com/codemanch/codemanch/issues', '_blank');
+			window.open('https://github.com/ikrarun/ikrarun/issues', '_blank');
 		}
 	}
 </script>
@@ -40,19 +40,19 @@
 <svelte:head>
 	<meta
 		property="og:image"
-		content="https://raw.githubusercontent.com/codemanch/codemanch/main/src/lib/images/shot.jpeg"
+		content="https://raw.githubusercontent.com/ikrarun/ikrarun/main/src/lib/images/shot.jpeg"
 	/>
-	<meta property="og:title" content="Code Manch" />
-	<meta property="og:url" content="https://codemanch.vercel.app/" />
+	<meta property="og:title" content="Kumar Arun" />
+	<meta property="og:url" content="https://kumararun.vercel.app/" />
 	<meta
 		property="twitter:image"
-		content="https://raw.githubusercontent.com/codemanch/codemanch/main/src/lib/images/shot.jpeg"
+		content="https://raw.githubusercontent.com/ikrarun/ikrarun/main/src/lib/images/shot.jpeg"
 	/>
 	<meta property="twitter:card" content="summary_large_image" />
-	<meta property="twitter:title" content="Code Manch" />
+	<meta property="twitter:title" content="Kumar Arun" />
 	<meta property="twitter:description" content="Created with Love by Kr Arun" />
 	<meta property="og:description" content="Created with Love by Kr Arun" />
-	<meta property="og:url" content="https://codemanch.vercel.app/" />
+	<meta property="og:url" content="https://kumararun.vercel.app/" />
 </svelte:head>
 
 <div class="app w-full overflow-clip bg-white dark:bg-black flex flex-col screen">

@@ -52,7 +52,7 @@
 		<div id="head" class="w-full max-w-[900px] p-3 uppercase text-sm inline-flex justify-between">
 			{#if !fix}
 				<div class="inline-flex items-center justify-between">
-					<Navbuttons link="" id={'hero'} text="Code Manch" />
+					<Navbuttons link="" id={'hero'} text="Kumar Arun" />
 				</div>
 				<nav class=" hidden sm:inline-flex topline space-x-2">
 					<Navbuttons link="" id={'about'} text="About" />

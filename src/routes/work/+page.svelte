@@ -14,7 +14,7 @@
 </script>
 
 <svelte:head>
-	<title>Work:Code Manch</title>
+	<title>Work:Kumar Arun</title>
 	<meta name="description" content="Created with love by ikrarun" />
 </svelte:head>
 <!-- Work Section -->

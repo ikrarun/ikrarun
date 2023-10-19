@@ -13,7 +13,7 @@
 </div>
 
 <svelte:head>
-	<title>Code Manch</title>
+	<title>Kumar Arun</title>
 	<meta name="description" content="Created with love by ikrarun" />
 </svelte:head>
 

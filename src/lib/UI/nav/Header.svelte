@@ -79,7 +79,7 @@
 				</div>
 			{:else}
 				<div class="inline-flex items-center justify-between">
-					<Navbuttons link="/" id={'hero'} text="Code Manch" />
+					<Navbuttons link="/" id={'hero'} text="Kumar Arun" />
 				</div>
 			{/if}
 		</div>

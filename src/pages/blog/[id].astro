@@ -6,7 +6,7 @@ const data: {
   title: string;
   body: string;
   date: string;
-  id: number;
+  id: string;
 }[] = JSON;
 
 const { id } = Astro.params;
@@ -14,7 +14,7 @@ const items: {
   title: string;
   body: string;
   date: string;
-  id: number;
+  id: string;
 } = data.filter((el) => el.id.toString() == id)[0];
 ---
 

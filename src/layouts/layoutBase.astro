@@ -1,0 +1,60 @@
+---
+interface Props {
+  title: string;
+}
+import Nav from "../components/Nav.astro";
+import "@fontsource/dela-gothic-one";
+import "@fontsource-variable/tilt-warp";
+import "@fontsource/raleway";
+import "@fontsource-variable/roboto-flex";
+import "@fontsource-variable/montserrat";
+import { ViewTransitions } from "astro:transitions";
+const { title } = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Astro description" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="generator" content={Astro.generator} />
+    <title>{title}</title>
+    <ViewTransitions />
+  </head>
+  <body
+    class="min-h-screen max-h-screen select-none dark:bg-black bg-white text-black dark:text-white flex flex-col"
+  >
+    <Nav />
+    <slot />
+    <div
+      class="bg-green-500 blur-[250px] z-10 h-48 w-96 rounded-full fixed top-10 left-24"
+    >
+    </div>
+
+    <div
+      class="bg-green-500 blur-[250px] z-10 h-48 w-96 rounded-full fixed bottom-10 right-24"
+    >
+    </div>
+    <style is:global>
+      * ::-webkit-scrollbar {
+        display: none; /* Safari and Chrome */
+      }
+
+      * {
+        -ms-overflow-style: none; /* Internet Explorer 10+ */
+        scrollbar-width: none;
+      }
+      h1 {
+        font-family: "Dela Gothic One", system-ui;
+      }
+      h2 {
+        font-family: "Raleway" system-ui;
+      }
+      h3 {
+        font-family: "Montserrat Variable", system-ui;
+      }
+    </style>
+  </body>
+</html>

@@ -1,49 +1,54 @@
-# 🚀Kumar Arun
+# Astro Starter Kit: Basics
 
-Welcome to my stellar developer portfolio website! 🌟 This is where I showcase my projects, skills, and journeys through the enchanting realm of software development.
+```sh
+npm create astro@latest -- --template basics
+```
 
-🌐 **Live Site:** [kumararun.vercel.app](https://kumararun.vercel.app)
+[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/basics)
+[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/basics)
+[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/basics/devcontainer.json)
 
-## 🌟 About Me
+> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
 
-Ahoy, fellow explorers of the digital cosmos! 🚀 My name is Kr.Arun, a code conjurer and tech enthusiast. With a wizard's hat and a keyboard as my wand, I weave spells of logic and creativity to craft marvelous web applications that leave a lasting impression on both users and the code itself. 🎩✨
+![just-the-basics](https://github.com/withastro/astro/assets/2244813/a0a5533c-a856-4198-8470-2d67b1d7c554)
 
+## 🚀 Project Structure
 
-As a seasoned traveler in the realm of code, I've honed my skills in various areas:
+Inside of your Astro project, you'll see the following folders and files:
 
-- 🌟 **JavaScript:** Mastered the art of scripting and taming the interactivity of the web.
-- ✨ **React:** Crafted enchanting user interfaces and brought life to user experiences.
-- 🎨 **HTML/CSS:** Painted the digital canvas with vibrant designs and responsive layouts.
-- 🦄 **Node.js:** Explored the realms of server-side scripting and API enchantments.
-- ...and more magical abilities that I've acquired on my coding odyssey.
+```text
+/
+├── public/
+│   └── favicon.svg
+├── src/
+│   ├── components/
+│   │   └── Card.astro
+│   ├── layouts/
+│   │   └── Layout.astro
+│   └── pages/
+│       └── index.astro
+└── package.json
+```
 
-## 🌐 Socials
+Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
 
-[![Instagram](https://img.shields.io/badge/Instagram-%23E4405F.svg?logo=Instagram&logoColor=white)](https://instagram.com/iamkrarun) [![Twitter](https://img.shields.io/badge/Twitter-%231DA1F2.svg?logo=Twitter&logoColor=white)](https://twitter.com/iamkrarun) [![YouTube](https://img.shields.io/badge/YouTube-%23FF0000.svg?logo=YouTube&logoColor=white)](https://youtube.com/@krarun)
+There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
 
+Any static assets, like images, can be placed in the `public/` directory.
 
-# 💻 Tech Stack
+## 🧞 Commands
 
-![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=plastic&logo=javascript&logoColor=%23F7DF1E) ![Markdown](https://img.shields.io/badge/markdown-%23000000.svg?style=plastic&logo=markdown&logoColor=white) ![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=plastic&logo=css3&logoColor=white) ![TypeScript](https://img.shields.io/badge/typescript-%23007ACC.svg?style=plastic&logo=typescript&logoColor=white) ![AWS](https://img.shields.io/badge/AWS-%23FF9900.svg?style=plastic&logo=amazon-aws&logoColor=white) ![Firebase](https://img.shields.io/badge/firebase-%23039BE5.svg?style=plastic&logo=firebase) ![Netlify](https://img.shields.io/badge/netlify-%23000000.svg?style=plastic&logo=netlify&logoColor=#00C7B7) ![Vercel](https://img.shields.io/badge/vercel-%23000000.svg?style=plastic&logo=vercel&logoColor=white) ![Next JS](https://img.shields.io/badge/Next-black?style=plastic&logo=next.js&logoColor=white) ![TailwindCSS](https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=plastic&logo=tailwind-css&logoColor=white) ![Svelte](https://img.shields.io/badge/svelte-%23f1413d.svg?style=plastic&logo=svelte&logoColor=white) ![Webpack](https://img.shields.io/badge/webpack-%238DD6F9.svg?style=plastic&logo=webpack&logoColor=black) ![Yarn](https://img.shields.io/badge/yarn-%232C8EBB.svg?style=plastic&logo=yarn&logoColor=white) ![ANDROID](https://img.shields.io/badge/android-%2320232a.svg?style=plastic&logo=android&logoColor=%a4c639) ![React](https://img.shields.io/badge/react-%2320232a.svg?style=plastic&logo=react&logoColor=%2361DAFB) ![React Native](https://img.shields.io/badge/react_native-%2320232a.svg?style=plastic&logo=react&logoColor=%2361DAFB) ![Redux](https://img.shields.io/badge/redux-%23593d88.svg?style=plastic&logo=redux&logoColor=white) ![Bootstrap](https://img.shields.io/badge/bootstrap-%23563D7C.svg?style=plastic&logo=bootstrap&logoColor=white)  ![Supabase](https://img.shields.io/badge/Supabase-3ECF8E?style=plastic&logo=supabase&logoColor=white) ![Postgres](https://img.shields.io/badge/postgres-%23316192.svg?style=plastic&logo=postgresql&logoColor=white)
+All commands are run from the root of the project, from a terminal:
 
-# 📊 GitHub Stats
+| Command                   | Action                                           |
+| :------------------------ | :----------------------------------------------- |
+| `npm install`             | Installs dependencies                            |
+| `npm run dev`             | Starts local dev server at `localhost:4321`      |
+| `npm run build`           | Build your production site to `./dist/`          |
+| `npm run preview`         | Preview your build locally, before deploying     |
+| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
+| `npm run astro -- --help` | Get help using the Astro CLI                     |
 
-![](https://github-readme-streak-stats.herokuapp.com/?user=ikrarun&theme=dark&hide_border=false)<br/>
-![](https://github-readme-stats.vercel.app/api/top-langs/?username=ikrarun&theme=dark&hide_border=false&include_all_commits=true&count_private=true&layout=compact)
+## 👀 Want to learn more?
 
-
-
-## 📞 Contact
-
-Ready to embark on a digital quest together? Feel free to reach out:
-
-- 📧 **Email:** [wowdeveloper@protonmail.com](mailto:wowdeveloper@protonmail.com)
-- 🔗 **Portfolio:** [kumararun.vercel.app](https://kumararun.vercel.app)
-
-## 📜 License
-
-This project is open-source under the [MIT License](LICENSE).
-
----
-
-Thank you for joining me on this magical coding adventure! With every line of code, we create spells that shape the digital world and leave our mark in the sands of time. 🧙‍♂️✨
+Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).

@@ -1,46 +1,30 @@
 {
-	"name": "codemanchsvelte",
-	"version": "0.0.2",
-	"scripts": {
-		"dev": "vite dev",
-		"build": "vite build",
-		"preview": "vite preview",
-		"check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
-		"check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
-		"lint": "prettier --plugin-search-dir . --check . && eslint .",
-		"format": "prettier --plugin-search-dir . --write .",
-		"start": "vite build && vite preview"
-	},
-	"devDependencies": {
-		"@fontsource/fira-mono": "^4.5.10",
-		"@neoconfetti/svelte": "^1.0.0",
-		"@sveltejs/adapter-auto": "^2.0.0",
-		"@sveltejs/kit": "^1.20.4",
-		"@types/cookie": "^0.5.1",
-		"@types/nodemailer": "^6.4.9",
-		"@typescript-eslint/eslint-plugin": "^5.45.0",
-		"@typescript-eslint/parser": "^5.45.0",
-		"autoprefixer": "^10.4.14",
-		"eslint": "^8.28.0",
-		"eslint-config-prettier": "^8.5.0",
-		"eslint-plugin-svelte": "^2.30.0",
-		"postcss": "^8.4.27",
-		"prettier": "^2.8.0",
-		"prettier-plugin-svelte": "^2.10.1",
-		"svelte": "^4.0.5",
-		"svelte-check": "^3.4.3",
-		"tailwindcss": "^3.3.3",
-		"tslib": "^2.4.1",
-		"typescript": "^5.0.0",
-		"vite": "^4.4.2"
-	},
-	"type": "module",
-	"dependencies": {
-		"@sveltejs/adapter-vercel": "^3.0.3",
-		"font-awesome": "^4.7.0",
-		"moment": "^2.29.4",
-		"nodemailer": "^6.9.4",
-		"svelte-awesome": "^3.2.1",
-		"vercel": "^31.2.2"
-	}
+  "name": "krarun",
+  "type": "module",
+  "version": "0.0.1",
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro check && astro build",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "@astrojs/check": "^0.7.0",
+    "@astrojs/tailwind": "^5.1.0",
+    "@astrojs/vercel": "^7.6.0",
+    "@astrouxds/tokens": "^1.12.0",
+    "@fontsource-variable/montserrat": "^5.0.19",
+    "@fontsource-variable/roboto-flex": "^5.0.15",
+    "@fontsource-variable/tilt-warp": "^5.0.5",
+    "@fontsource/dela-gothic-one": "^5.0.19",
+    "@fontsource/raleway": "^5.0.19",
+    "@iconify-json/mdi": "^1.1.66",
+    "astro": "^4.8.6",
+    "tailwindcss": "^3.4.3",
+    "typescript": "^5.4.5"
+  },
+  "devDependencies": {
+    "astro-icon": "^1.1.0"
+  }
 }

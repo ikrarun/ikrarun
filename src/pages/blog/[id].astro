@@ -1,0 +1,52 @@
+---
+import Layout from "../../layouts/layoutBase.astro";
+import JSON from "../../jsons/blogs.json";
+
+const data: {
+  title: string;
+  body: string;
+  date: string;
+  id: number;
+}[] = JSON;
+
+const { id } = Astro.params;
+const items: {
+  title: string;
+  body: string;
+  date: string;
+  id: number;
+} = data.filter((el) => el.id.toString() == id)[0];
+---
+
+<Layout title="Blog">
+  <div class="w-full grid-cols-9 grid items-center justify-center flex-grow">
+    <!-- Blogs List -->
+    <div
+      class="flex flex-col overflow-y-auto w-full col-span-2 border-r px-4 py-4 h-[90vh] max-w-[1280px] gap-3"
+    >
+      {
+        data.map((item) => (
+          <a
+            class={
+              items.id === item.id
+                ? "w-auto z-[60] h-auto px-4 py-2 flex flex-col hover:bg-white/20 bg-white/20 border-white/10 border-[2px] rounded-md"
+                : "w-auto z-[60] h-auto px-4 py-2 flex flex-col hover:bg-white/20 bg-white/10 border-white/10 border-[2px] rounded-md"
+            }
+            href={"/blog/" + item.id}
+          >
+            <h3 class="text-xl font-bold">{item.title}</h3>
+          </a>
+        ))
+      }
+    </div>
+
+    <!-- Blogs View -->
+    <div
+      class="flex flex-col w-full flex-grow py-6 gap-3 px-9 col-span-7 h-full"
+    >
+      <h3 class="text-6xl font-bold">{items.title}</h3>
+      <div class="w-full border-b border-white/20"></div>
+      <h3 class="text-xl">{items.body}</h3>
+    </div>
+  </div>
+</Layout>

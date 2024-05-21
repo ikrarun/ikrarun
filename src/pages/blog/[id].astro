@@ -3,7 +3,7 @@ import Layout from "../../layouts/layoutBase.astro";
 import JSON from "../../jsons/blogs.json";
 import { Icon } from "astro-icon/components";
 const { id } = Astro.params;
-const items = JSON.filter((el) => el.id === id)[0];
+const items = await JSON.filter((el) => el.id === id)[0];
 ---
 
 <Layout title="Latest">

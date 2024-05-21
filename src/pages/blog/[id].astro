@@ -1,55 +1,28 @@
 ---
 import Layout from "../../layouts/layoutBase.astro";
 import JSON from "../../jsons/blogs.json";
-
-const data: {
-  title: string;
-  body: string;
-  date: string;
-  id: string;
-}[] = JSON;
-
+import { Icon } from "astro-icon/components";
 const { id } = Astro.params;
-const items: {
-  title: string;
-  body: string;
-  date: string;
-  id: string;
-} = data.filter((el) => el.id.toString() == id)[0];
+const items = JSON.filter((el) => el.id === id)[0];
 ---
 
-<Layout title="Blog">
-  <div
-    class="w-full z-10 grid-cols-9 grid items-center justify-center flex-grow"
-  >
-    <!-- Blogs List -->
-    <div
-      class="flex flex-col overflow-y-auto w-full col-span-2 border-r px-4 py-4 h-[90vh] max-w-[1280px] gap-3"
+<Layout title="Latest">
+  <div class="flex z-10 h-full flex-grow flex-col gap-4 pt-10 pb-4 px-4">
+    <a
+      href="/blog"
+      class="text-black bg-white rounded-full w-fit p-1 text-3xl font-bold"
+      ><Icon name={"back"} /></a
     >
-      {
-        data.map((item) => (
-          <a
-            class={
-              items.id === item.id
-                ? "w-auto z-[60] h-auto px-4 py-2 flex flex-col hover:bg-white/20 bg-white/20 border-white/10 border-[2px] rounded-md"
-                : "w-auto z-[60] h-auto px-4 py-2 flex flex-col hover:bg-white/20 bg-white/10 border-white/10 border-[2px] rounded-md"
-            }
-            href={"/blog/" + item.id}
-          >
-            <h3 class="text-xl font-bold">{item.title}</h3>
-          </a>
-        ))
-      }
-    </div>
-
-    <!-- Blogs View -->
-    <div
-      class="flex flex-col overflow-y-auto w-full flex-grow py-6 gap-3 px-9 col-span-7 h-full"
+    <h3
+      class="text-6xl font-bold underline-offset-8 underline"
+      transition:name={items.id}
+      transition:animate="fade"
     >
-      <h3 class="text-6xl font-bold">{items.title}</h3>
-      <div class="w-full border-b border-white/20"></div>
-      <h3 class="text-xl grow">{items.body}</h3>
-      <h3 class="text-sm underline underline-offset-4">{items.date}</h3>
-    </div>
+      {items.title}
+    </h3>
+    <h3 class="text-xl flex-grow">{items.body}</h3>
+    <h3 class="text-sm font-semibold underline underline-offset-4">
+      {items.date}
+    </h3>
   </div>
 </Layout>

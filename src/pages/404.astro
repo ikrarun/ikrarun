@@ -1,0 +1,20 @@
+---
+import Layout from "../layouts/layoutBase.astro";
+---
+
+<script>
+  import { navigate } from "astro:transitions/client";
+
+  document.getElementById("gh")?.addEventListener("click", () => {
+    navigate("/", { history: "replace" });
+  });
+</script>
+<Layout title="Page Not Found">
+  <main class="flex flex-col gap-4 items-center h-full grow justify-center">
+    <h1 class="text-9xl">404</h1>
+    <h1 class="text-xl">Page Not Found</h1>
+    <button id="gh" class="text-xl bg-white text-black px-4 py-2 rounded-md"
+      ><h1>Home</h1></button
+    >
+  </main>
+</Layout>

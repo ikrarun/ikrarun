@@ -1,0 +1,26 @@
+---
+import { Icon } from "astro-icon/components";
+import Layout from "../layouts/layoutBase.astro";
+---
+
+<Layout title="About">
+  <div
+    class="px-4 pt-12 bg-black md:w-2/5 flex flex-col items-start justify-start h-full flex-grow gap-4 z-10"
+  >
+    <img
+      class="h-52 w-auto rounded-full"
+      src="/hero.svg"
+      alt="developer image"
+      transition:name="hero"
+    />
+    <h1 class="text-7xl font-bold">ABOUT</h1>
+    <h3 class="text-xl">
+      I'm, a self-taught full-stack developer on a mission to create impactful
+      digital solutions. Through self-guided learning and hands-on experience,
+      I've honed my skills in both front-end and back-end development.
+      Passionate about innovation and problem-solving, I thrive on challenges
+      and love turning ideas into functional code. Let's collaborate and build
+      something awesome together!
+    </h3>
+  </div>
+</Layout>

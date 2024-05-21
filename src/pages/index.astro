@@ -8,8 +8,21 @@ import Layout from "../layouts/layoutBase.astro";
     class="pl-16 gap-4 flex-grow py-2 flex flex-col justify-center"
   >
     <h1 class="text-9xl">Kumar Arun</h1>
+
+    <img
+      transition:name="hero"
+      class="h-96 self-end right-[10%] w-auto fixed top-1/3 bg-blend-overlay"
+      src="/hero.svg"
+      alt="hero"
+    />
     <h2 class="text-4xl">
       Self-taught Full Stack Developer, School-taught Mathematician
     </h2>
+    <a
+      href="/about"
+      class="self-start bg-green-600 px-4 py-2 rounded-md font-bold"
+    >
+      <h3>Who is Arun?</h3></a
+    >
   </div>
 </Layout>

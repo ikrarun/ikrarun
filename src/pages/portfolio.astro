@@ -1,6 +1,9 @@
 ---
+import { Image } from "astro:assets";
 import Layout from "../layouts/layoutBase.astro";
-import Data from "../jsons/portfolio.json";
+const Data = await fetch(
+  "https://raw.githubusercontent.com/ikrarun/ikrarun/main/src/jsons/portfolio.json"
+).then((res) => res.json());
 const data: {
   title: string;
   desc: string;
@@ -23,7 +26,13 @@ const data: {
             href={item.link}
             class="h-full rounded-md flex flex-col w-full px-2 py-2 border border-white/30"
           >
-            <img class="rounded w-full" src={item.image} alt={item.title}>
+            <Image
+              class="rounded w-full"
+              inferSize
+              src={item.image}
+              alt={item.title}
+              loading="eager"
+            />
             <h1 class="text-2xl px-2">{item.title}vvdssx``</h1>
             <h1 class="text-lg px-2">{item.desc}vvdssx``</h1>
           </a>

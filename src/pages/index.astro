@@ -5,23 +5,22 @@ import Layout from "../layouts/layoutBase.astro";
 <Layout title="Kumar Arun">
   <div
     id="hero"
-    class="gap-4 flex-grow py-2 px-4 flex h-full sm:items-center flex-col sm:flex-row justify-center"
+    class="gap-4 flex-grow py-2 px-4 flex flex-col sm:flex-row justify-center items-center"
   >
-    <div class="w-full flex gap-2 flex-col">
-      <h1 class="text-7xl">Kumar Arun</h1>
-      <h2 class="text-3xl">
+    <div
+      class="w-full sm:w-1/2 flex gap-2 flex-col items-center sm:items-start"
+    >
+      <h1 class="text-4xl sm:text-7xl text-center sm:text-left">Kumar Arun</h1>
+      <h2 class="text-xl sm:text-3xl text-center sm:text-left">
         Self-taught Full Stack Developer, School-taught Mathematician
       </h2>
-      <a
-        href="/about"
-        class="self-start bg-green-600 px-4 py-2 rounded-md font-bold"
-      >
-        <h3>Who is Arun?</h3></a
-      >
+      <a href="/about" class="bg-green-600 px-4 py-2 rounded-md font-bold">
+        <h3>Who is Arun?</h3>
+      </a>
     </div>
     <img
       transition:name="hero"
-      class="sm:h-64 w-full left-1 h-40 bg-blend-overlay"
+      class="sm:h-64 w-full sm:w-1/2 left-1 h-40 bg-blend-overlay"
       src="/hero.svg"
       alt="hero"
     />

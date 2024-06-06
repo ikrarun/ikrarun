@@ -1,0 +1,98 @@
+---
+interface Props {
+  title: string;
+}
+
+import { Icon } from "astro-icon/components";
+import { ViewTransitions } from "astro:transitions";
+const { title } = Astro.props;
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>{title}</title>
+    <ViewTransitions />
+  </head>
+  <body
+    class="min-h-screen select-none dark:bg-black dark:text-white bg-white text-black flex flex-col flex-grow"
+    transition:persist
+  >
+    <div class="w-full flex flex-col mx-auto">
+      <div
+        class="w-full bg-gradient-to-r from-white/30 via-white/80 to-white/30 pb-[0.05em] inline-flex items-center justify-between"
+      >
+        <div
+          class="w-full inline-flex mx-auto bg-black items-center justify-between"
+        >
+          <div
+            class="w-full inline-flex py-2 z-50 px-4 mx-auto bg-black items-center justify-between max-w-[960px]"
+          >
+            <h1 class="text-3xl font-semibold">{title}</h1>
+
+            <!-- Nav Links -->
+            <!-- Desktop Mode -->
+            <div
+              class="md:w-full hidden md:inline-flex gap-2 items-center justify-end"
+            >
+              <h1 class="inline-flex items-center">
+                About <Icon name={"arrow"} />
+              </h1>
+              <h1 class="inline-flex items-center">
+                About <Icon name={"arrow"} />
+              </h1>
+              <h1 class="inline-flex items-center">
+                About <Icon name={"arrow"} />
+              </h1>
+            </div>
+            <!-- Mobile Nav -->
+            <div
+              class="md:w-full md:hidden flex flex-col items-center justify-end"
+            >
+              <button class="z-[500]" id="toggle">mobile</button>
+
+              <div
+                id="mnav"
+                class="fixed z-10 top-0 h-screen w-screen left-full items-center justify-center ease-in-out duration-700 flex flex-col gap-4"
+              >
+                <h1 class="inline-flex items-center">
+                  About <Icon name={"arrow"} />
+                </h1>
+                <h1 class="inline-flex items-center">
+                  About <Icon name={"arrow"} />
+                </h1>
+                <h1 class="inline-flex items-center">
+                  About <Icon name={"arrow"} />
+                </h1>
+              </div>
+
+              <script>
+                // Using document.addEventListener to ensure DOM is loaded before accessing elements
+                document.addEventListener("DOMContentLoaded", function () {
+                  // Using let instead of var for block scope
+                  let visible = false;
+                  const btn_toggle = document.getElementById("toggle");
+
+                  // Using optional chaining to safely add event listener
+                  btn_toggle?.addEventListener("click", function () {
+                    // Toggling the visibility boolean value
+                    visible = !visible;
+
+                    // Retrieving the menu element once instead of every time inside the click event
+                    const mnav = document.getElementById("mnav");
+
+                    // Using classList.toggle for cleaner code
+                    mnav?.classList.toggle("left-0", visible);
+                    mnav?.classList.toggle("left-full", !visible);
+                  });
+                });
+              </script>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

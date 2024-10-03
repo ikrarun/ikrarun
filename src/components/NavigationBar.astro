@@ -1,0 +1,20 @@
+---
+import Nav_Btn from "./button/nav_btn.astro";
+---
+
+<nav
+  class="w-full fixed top-0 z-[100] border-b-[1px] border-white/30 dark:bg-black bg-white/30 dark:text-white text-black px-4 py-2 inline-flex justify-between items-center"
+>
+  <div
+    class="inline-flex gap-5 max-w-[900px] mx-auto w-full items-center justify-between"
+  >
+    <a href="/" data-astro-history="replace"
+      ><h3 class="text-2xl py-1 uppercase">Kr Arun</h3></a
+    >
+    <ul id="list" class={"text-sm inline-flex gap-2 py-2 items-center"}>
+      <Nav_Btn title="Blog" href="/blog" />
+      <Nav_Btn title="Latest" href="/latest" />
+      <Nav_Btn title="Portfolio" href="/portfolio" />
+    </ul>
+  </div>
+</nav>

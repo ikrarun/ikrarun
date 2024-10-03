@@ -1,0 +1,8 @@
+---
+import { Icon } from "astro-icon/components";
+const { title, href } = Astro.props;
+---
+
+<a href={href} aria-label="blog" data-astro-history="auto">
+  <h3 class="inline-flex items-center">{title}<Icon name="arrow" /></h3>
+</a>

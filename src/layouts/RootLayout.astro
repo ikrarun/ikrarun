@@ -2,35 +2,36 @@
 interface Props {
   title: string;
 }
-import Nav from "../components/Nav.astro";
-import "@fontsource/dela-gothic-one";
+import NavigationBar from "../components/NavigationBar.astro";
 import "@fontsource-variable/tilt-warp";
-// import "@fontsource-variable/raleway";
-import "@fontsource-variable/roboto-flex";
 import "@fontsource-variable/montserrat";
 import { ViewTransitions } from "astro:transitions";
 const { title } = Astro.props;
 ---
 
-<script>
- 
-</script>
-<html lang="en" transition:animate={"none"}>
+<script></script>
+
+<html lang="en" transition:animate="none">
   <head>
     <meta charset="UTF-8" />
     <meta name="description" content="Astro description" />
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
-<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <!--     <link rel="icon" type="image/png" href="/favicon.png" /> -->
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" type="image/png" href="/favicon.png" />
     <title>{title}</title>
     <ViewTransitions />
   </head>
+
   <body
-    class="min-h-screen max-h-screen select-none dark:bg-black bg-white text-black dark:text-white flex flex-col"
+    class="min-h-screen max-h-screen select-none dark:bg-black bg-white text-black dark:text-white flex flex-col w-screen grow"
   >
-    <Nav />
-    <slot />
+    <NavigationBar />
+    <div
+      class="max-h-[1080px] pt-[3rem] grow flex flex-row items-center w-full justify-center max-w-[900px] mx-auto"
+    >
+      <slot />
+    </div>
     <div
       class="bg-green-500 blur-[250px] z-[5] h-48 w-96 rounded-full fixed top-10 left-24"
     >
@@ -49,12 +50,8 @@ const { title } = Astro.props;
         -ms-overflow-style: none; /* Internet Explorer 10+ */
         scrollbar-width: none;
       }
-      h1 {
-        font-family: "Dela Gothic One", system-ui;
-      }
-      h2 {
-        font-family: "Raleway" system-ui;
-      }
+      h1,
+      h2,
       h3 {
         font-family: "Montserrat Variable", system-ui;
       }

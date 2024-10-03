@@ -1,17 +1,18 @@
 ---
-import { Icon } from "astro-icon/components";
-import Layout from "../layouts/layoutBase.astro";
+import Layout from "../../layouts/RootLayout.astro";
+
+import Goto from "../../components/button/goto.astro";
 ---
 
 <Layout title="About">
   <div
-    class="px-4 pt-12 bg-black md:w-2/5 flex flex-col items-start justify-start h-full flex-grow gap-4 z-10"
+    class="flex flex-col items-start justify-center p-4 gap-6"
+    transition:animate="fade"
   >
     <img
       class="h-52 w-auto rounded-full"
       src="/hero.svg"
       alt="developer image"
-      transition:name="hero"
     />
     <h1 class="text-7xl font-bold">ABOUT</h1>
     <h3 class="text-xl">
@@ -22,5 +23,7 @@ import Layout from "../layouts/layoutBase.astro";
       and love turning ideas into functional code. Let's collaborate and build
       something awesome together!
     </h3>
+
+    <Goto title="Home" href="/" />
   </div>
 </Layout>

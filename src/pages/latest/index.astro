@@ -1,41 +1,38 @@
 ---
-import "@fontsource-variable/montserrat";
 import { getCollection } from "astro:content";
 import Layout from "../../layouts/RootLayout.astro";
 import { Icon } from "astro-icon/components";
-const { id } = Astro.params;
-const post = (await getCollection("blog")).find((post) => post.data.id === id);
-if (!post) {
-  throw new Error(`Post with id "${id}" not found.`);
-}
-const content = await post.render();
+
+const blogs = await getCollection("blog");
+const post = blogs[0].data;
+const content = await blogs[0].render();
 ---
 
-<Layout title={post.data.title}>
+<Layout title={post.title}>
   <div
     transition:animate="slide"
     class="flex z-10 h-full place-self-start flex-grow flex-col gap-4 mt-10 pb-4 px-4"
   >
     <a
-      href="/blog"
+      href="/"
       data-astro-history="replace"
-      class="text-black bg-white rounded-full w-fit p-1 text-3xl font-bold transition-transform transform hover:scale-105"
+      class="text-black p-3 bg-white rounded-full w-fit text-base font-bold transition-transform transform hover:scale-105"
       aria-label="Back to blog"
     >
-      <Icon name={"back"} />
+      <Icon name={"menu"} />
     </a>
     <h3
       class="text-6xl w-full leading-tight font-bold underline-offset-8 underline"
     >
-      {post?.data.title}
+      {post.title}
     </h3>
-    <h3 class="text-xl flex-grow">{post.data.description}</h3>
+    <h3 class="text-xl flex-grow">{post.description}</h3>
     <h3 class="text-sm font-semibold underline underline-offset-4">
-      {post?.data.date}
+      {post.date}
     </h3>
     <img
       class="w-full flex flex-col h-60 rounded-lg my-6 object-cover"
-      src={post.data.image}
+      src={post.image}
     />
     <div
       class="prose m-2 mb-16 md:prose-lg lg:prose-xl

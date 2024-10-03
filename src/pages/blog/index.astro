@@ -1,0 +1,44 @@
+---
+import Layout from "../../layouts/RootLayout.astro";
+import { getCollection } from "astro:content";
+const blogs = await getCollection("blog");
+---
+
+<Layout title="Blog">
+  <div class="flex flex-col self-start items-start justify-center p-4 gap-6">
+    <h1 class="text-6xl font-bold self-center underline mt-4 mb-2">Blogs</h1>
+
+    <div
+      class="grid grid-cols-1 place-content-center md:grid-cols-2 w-full p-4 gap-3"
+      transition:animate="slide"
+    >
+      {
+        blogs.map((item: (typeof blogs)[0]) => (
+          <a
+            class="relative w-auto scale-95 hover:scale-100 overflow-clip grow h-64 flex flex-col hover:bg-white/20 bg-white/10 border-white/10 rounded-md"
+            href={"/blog/" + item.data.id}
+            style={{
+              backgroundImage: `url(${item.data.image})`,
+              backgroundSize: "cover",
+              backgroundPosition: "center",
+            }}
+            data-astro-history="replace"
+          >
+            {/* Tint using a pseudo-element */}
+            <span
+              class="absolute inset-0 bg-gradient-to-b from-black to-gray-500/10 opacity-70 rounded-md"
+              aria-hidden="true"
+            />
+
+            <div class="flex px-4 py-2 grow flex-col gap-2 relative z-10">
+              <h3 class="text-3xl font-semibold">{item.data.title}</h3>
+              <h3 class="text-base mt-2 font-normal">
+                {item.data.description}
+              </h3>
+            </div>
+          </a>
+        ))
+      }
+    </div>
+  </div>
+</Layout>

@@ -20,7 +20,7 @@ const { title } = Astro.props;
     <meta
       name="theme-color"
       media="(prefers-color-scheme: light)"
-      content="black"
+      content="#ffffff"
     />
     <meta
       name="theme-color"
@@ -41,29 +41,20 @@ const { title } = Astro.props;
     >
       <slot />
     </div>
-    <div
-      class="bg-green-500 blur-[250px] h-48 w-96 rounded-full fixed top-10 left-24"
-    >
-    </div>
-
-    <div
-      class="bg-green-500 blur-[250px] h-48 w-96 rounded-full fixed bottom-10 right-24"
-    >
-    </div>
-    <style is:global>
-      * ::-webkit-scrollbar {
-        display: none; /* Safari and Chrome */
-      }
-
-      * {
-        -ms-overflow-style: none; /* Internet Explorer 10+ */
-        scrollbar-width: none;
-      }
-      h1,
-      h2,
-      h3 {
-        font-family: "Montserrat Variable", system-ui;
-      }
-    </style>
   </body>
+  <style is:global>
+    * ::-webkit-scrollbar {
+      display: none; /* Safari and Chrome */
+    }
+
+    * {
+      -ms-overflow-style: none; /* Internet Explorer 10+ */
+      scrollbar-width: none;
+    }
+    h1,
+    h2,
+    h3 {
+      font-family: "Montserrat Variable", system-ui;
+    }
+  </style>
 </html>

@@ -1,4 +1,2 @@
 
-# Kumar Arun
-
-Hey You.
+Portfolio Site for Kumar Arun.
